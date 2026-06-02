@@ -1,226 +1,262 @@
 #!/usr/bin/env node
 // fetch-fixtures.mjs
-// Fetches World Cup 2026 + International Friendly match data from
-// football-data.org and writes fixtures.json in the format expected by the
-// Sweeper Flutter app.
-//
-// Required env var: FOOTBALL_API_KEY  (free key from football-data.org)
-// If not set, a placeholder fixtures.json with test friendlies is written.
+// Fetches WC 2026 match data from ESPN's public API — no API key required.
+// Run: node scripts/fetch-fixtures.mjs
+// Schedule: GitHub Actions workflow_dispatch or cron
 
-import { existsSync, writeFileSync } from 'node:fs';
+import { writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { join, dirname } from 'node:path';
+import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUTPUT = join(__dirname, '..', 'fixtures.json');
 
-const API_KEY = process.env.FOOTBALL_API_KEY ?? '';
-const BASE    = 'https://api.football-data.org/v4';
+const SITE = 'https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world';
+const CORE = 'https://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world';
 
 // ── Team registry ─────────────────────────────────────────────────────────────
-// Keyed by the TLA the app uses (matches FIFA standard & football-data.org TLAs).
+// Keyed by ESPN abbreviation → { name, flag }
+// Covers all 48 WC 2026 qualified teams + common alternates.
 const TEAMS = {
-  ARG: { name: 'Argentina',    flag: '🇦🇷' },
-  FRA: { name: 'France',       flag: '🇫🇷' },
-  ESP: { name: 'Spain',        flag: '🇪🇸' },
-  ENG: { name: 'England',      flag: '🏴󠁧󠁢󠁥󠁮󠁧󠁿' },
-  BRA: { name: 'Brazil',       flag: '🇧🇷' },
-  POR: { name: 'Portugal',     flag: '🇵🇹' },
-  NED: { name: 'Netherlands',  flag: '🇳🇱' },
-  ITA: { name: 'Italy',        flag: '🇮🇹' },
-  GER: { name: 'Germany',      flag: '🇩🇪' },
-  COL: { name: 'Colombia',     flag: '🇨🇴' },
-  CRO: { name: 'Croatia',      flag: '🇭🇷' },
-  MAR: { name: 'Morocco',      flag: '🇲🇦' },
-  USA: { name: 'USA',          flag: '🇺🇸' },
-  JPN: { name: 'Japan',        flag: '🇯🇵' },
-  MEX: { name: 'Mexico',       flag: '🇲🇽' },
-  URU: { name: 'Uruguay',      flag: '🇺🇾' },
-  SEN: { name: 'Senegal',      flag: '🇸🇳' },
-  SUI: { name: 'Switzerland',  flag: '🇨🇭' },
-  DEN: { name: 'Denmark',      flag: '🇩🇰' },
-  AUT: { name: 'Austria',      flag: '🇦🇹' },
-  KOR: { name: 'South Korea',  flag: '🇰🇷' },
-  SRB: { name: 'Serbia',       flag: '🇷🇸' },
-  AUS: { name: 'Australia',    flag: '🇦🇺' },
-  HUN: { name: 'Hungary',      flag: '🇭🇺' },
-  IRN: { name: 'Iran',         flag: '🇮🇷' },
-  TUR: { name: 'Turkey',       flag: '🇹🇷' },
-  POL: { name: 'Poland',       flag: '🇵🇱' },
-  NGA: { name: 'Nigeria',      flag: '🇳🇬' },
-  EGY: { name: 'Egypt',        flag: '🇪🇬' },
-  ALG: { name: 'Algeria',      flag: '🇩🇿' },
-  ECU: { name: 'Ecuador',      flag: '🇪🇨' },
-  VEN: { name: 'Venezuela',    flag: '🇻🇪' },
-  KSA: { name: 'Saudi Arabia', flag: '🇸🇦' },
-  CIV: { name: 'Ivory Coast',  flag: '🇨🇮' },
-  SVK: { name: 'Slovakia',     flag: '🇸🇰' },
-  QAT: { name: 'Qatar',        flag: '🇶🇦' },
-  CAN: { name: 'Canada',       flag: '🇨🇦' },
-  RSA: { name: 'South Africa', flag: '🇿🇦' },
-  GHA: { name: 'Ghana',        flag: '🇬🇭' },
-  CMR: { name: 'Cameroon',     flag: '🇨🇲' },
-  PAN: { name: 'Panama',       flag: '🇵🇦' },
-  JOR: { name: 'Jordan',       flag: '🇯🇴' },
-  UZB: { name: 'Uzbekistan',   flag: '🇺🇿' },
-  JAM: { name: 'Jamaica',      flag: '🇯🇲' },
-  HND: { name: 'Honduras',     flag: '🇭🇳' },
-  NZL: { name: 'New Zealand',  flag: '🇳🇿' },
-  CRC: { name: 'Costa Rica',   flag: '🇨🇷' },
-  MLI: { name: 'Mali',         flag: '🇲🇱' },
+  // South America
+  ARG: { name: 'Argentina',           flag: '🇦🇷' },
+  BRA: { name: 'Brazil',              flag: '🇧🇷' },
+  URU: { name: 'Uruguay',             flag: '🇺🇾' },
+  COL: { name: 'Colombia',            flag: '🇨🇴' },
+  ECU: { name: 'Ecuador',             flag: '🇪🇨' },
+  VEN: { name: 'Venezuela',           flag: '🇻🇪' },
+  PAR: { name: 'Paraguay',            flag: '🇵🇾' },
+  CHI: { name: 'Chile',               flag: '🇨🇱' },
+  BOL: { name: 'Bolivia',             flag: '🇧🇴' },
+  PER: { name: 'Peru',                flag: '🇵🇪' },
+
+  // Europe
+  FRA: { name: 'France',              flag: '🇫🇷' },
+  ESP: { name: 'Spain',               flag: '🇪🇸' },
+  ENG: { name: 'England',             flag: '🏴󠁧󠁢󠁥󠁮󠁧󠁿' },
+  GER: { name: 'Germany',             flag: '🇩🇪' },
+  POR: { name: 'Portugal',            flag: '🇵🇹' },
+  NED: { name: 'Netherlands',         flag: '🇳🇱' },
+  ITA: { name: 'Italy',               flag: '🇮🇹' },
+  CRO: { name: 'Croatia',             flag: '🇭🇷' },
+  SRB: { name: 'Serbia',              flag: '🇷🇸' },
+  HUN: { name: 'Hungary',             flag: '🇭🇺' },
+  SVK: { name: 'Slovakia',            flag: '🇸🇰' },
+  AUT: { name: 'Austria',             flag: '🇦🇹' },
+  SUI: { name: 'Switzerland',         flag: '🇨🇭' },
+  DEN: { name: 'Denmark',             flag: '🇩🇰' },
+  TUR: { name: 'Turkey',              flag: '🇹🇷' },
+  BEL: { name: 'Belgium',             flag: '🇧🇪' },
+  POL: { name: 'Poland',              flag: '🇵🇱' },
+  SCO: { name: 'Scotland',            flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿' },
+  UKR: { name: 'Ukraine',             flag: '🇺🇦' },
+  BIH: { name: 'Bosnia & Herzegovina',flag: '🇧🇦' },
+  CZE: { name: 'Czech Republic',      flag: '🇨🇿' },
+  SVN: { name: 'Slovenia',            flag: '🇸🇮' },
+  ROU: { name: 'Romania',             flag: '🇷🇴' },
+  GRE: { name: 'Greece',              flag: '🇬🇷' },
+  NOR: { name: 'Norway',              flag: '🇳🇴' },
+  WAL: { name: 'Wales',               flag: '🏴󠁧󠁢󠁷󠁬󠁳󠁿' },
+  FIN: { name: 'Finland',             flag: '🇫🇮' },
+
+  // North/Central America & Caribbean
+  USA: { name: 'USA',                 flag: '🇺🇸' },
+  MEX: { name: 'Mexico',              flag: '🇲🇽' },
+  CAN: { name: 'Canada',              flag: '🇨🇦' },
+  PAN: { name: 'Panama',              flag: '🇵🇦' },
+  JAM: { name: 'Jamaica',             flag: '🇯🇲' },
+  HND: { name: 'Honduras',            flag: '🇭🇳' },
+  CRC: { name: 'Costa Rica',          flag: '🇨🇷' },
+  CUB: { name: 'Cuba',                flag: '🇨🇺' },
+
+  // Asia
+  JPN: { name: 'Japan',               flag: '🇯🇵' },
+  KOR: { name: 'South Korea',         flag: '🇰🇷' },
+  AUS: { name: 'Australia',           flag: '🇦🇺' },
+  IRN: { name: 'Iran',                flag: '🇮🇷' },
+  KSA: { name: 'Saudi Arabia',        flag: '🇸🇦' },
+  JOR: { name: 'Jordan',              flag: '🇯🇴' },
+  UZB: { name: 'Uzbekistan',          flag: '🇺🇿' },
+  IRQ: { name: 'Iraq',                flag: '🇮🇶' },
+  QAT: { name: 'Qatar',               flag: '🇶🇦' },
+  CHN: { name: 'China',               flag: '🇨🇳' },
+  THA: { name: 'Thailand',            flag: '🇹🇭' },
+  IDN: { name: 'Indonesia',           flag: '🇮🇩' },
+
+  // Africa
+  MAR: { name: 'Morocco',             flag: '🇲🇦' },
+  EGY: { name: 'Egypt',               flag: '🇪🇬' },
+  NGA: { name: 'Nigeria',             flag: '🇳🇬' },
+  SEN: { name: 'Senegal',             flag: '🇸🇳' },
+  CIV: { name: 'Ivory Coast',         flag: '🇨🇮' },
+  CMR: { name: 'Cameroon',            flag: '🇨🇲' },
+  GHA: { name: 'Ghana',               flag: '🇬🇭' },
+  ALG: { name: 'Algeria',             flag: '🇩🇿' },
+  MLI: { name: 'Mali',                flag: '🇲🇱' },
+  RSA: { name: 'South Africa',        flag: '🇿🇦' },
+  TUN: { name: 'Tunisia',             flag: '🇹🇳' },
+  TGO: { name: 'Togo',                flag: '🇹🇬' },
+  GAB: { name: 'Gabon',               flag: '🇬🇦' },
+  ZIM: { name: 'Zimbabwe',            flag: '🇿🇼' },
+
+  // Oceania
+  NZL: { name: 'New Zealand',         flag: '🇳🇿' },
+  FIJ: { name: 'Fiji',                flag: '🇫🇯' },
+
+  // Additional WC 2026 qualifiers confirmed by ESPN fixture data
+  SWE: { name: 'Sweden',              flag: '🇸🇪' },
+  HAI: { name: 'Haiti',               flag: '🇭🇹' },
+  CUW: { name: 'Curaçao',             flag: '🇨🇼' },
+  CPV: { name: 'Cape Verde',          flag: '🇨🇻' },
+  COD: { name: 'Congo DR',            flag: '🇨🇩' },
 };
 
-// football-data.org sometimes uses TLAs that differ from FIFA standard.
-// Map those → our app TLA.
-const TLA_REMAP = {
-  HOL: 'NED',  // Netherlands
-  IRI: 'IRN',  // Iran
-  NGR: 'NGA',  // Nigeria
-  SAU: 'KSA',  // Saudi Arabia
-  ZAF: 'RSA',  // South Africa (ISO 3166 code)
+// ESPN occasionally uses non-standard TLAs — remap to our canonical ones.
+const ESPN_REMAP = {
+  HOL: 'NED',
+  CZK: 'CZE',
 };
 
 function normalizeTla(tla) {
   if (!tla) return null;
   const up = tla.toUpperCase();
-  return TLA_REMAP[up] ?? up;
+  return ESPN_REMAP[up] ?? up;
 }
 
-// ── Status / round / group mappers ────────────────────────────────────────────
+// ── HTTP ──────────────────────────────────────────────────────────────────────
 
-function mapStatus(s) {
-  switch (s) {
-    case 'IN_PLAY':
-    case 'PAUSED':
-      return 'live';
-    case 'FINISHED':
-    case 'AWARDED':
-      return 'finished';
-    case 'POSTPONED':
-    case 'CANCELLED':
-    case 'ABANDONED':
-    case 'SUSPENDED':
-      return 'postponed';
-    default:
-      return 'scheduled'; // SCHEDULED, TIMED, etc.
-  }
-}
-
-function mapRound(stage) {
-  const map = {
-    GROUP_STAGE:                 'Group Stage',
-    ROUND_OF_32:                 'Round of 32',
-    LAST_32:                     'Round of 32',
-    PRELIMINARY_FINAL:           'Round of 32',
-    PRELIMINARY_SEMI_FINALS:     'Round of 32',
-    ROUND_OF_16:                 'Round of 16',
-    LAST_16:                     'Round of 16',
-    QUARTER_FINALS:              'Quarter-Finals',
-    SEMI_FINALS:                 'Semi-Finals',
-    THIRD_PLACE:                 'Third Place',
-    FINAL:                       'Final',
-  };
-  return map[stage] ?? (stage ?? 'Unknown');
-}
-
-function mapGroup(group) {
-  if (!group) return null;
-  // "GROUP_A" → "Group A",  "GROUP_B" → "Group B", etc.
-  return group.replace(/^GROUP_/, 'Group ') || null;
-}
-
-// ── HTTP helper ───────────────────────────────────────────────────────────────
-
-async function apiGet(path) {
-  const res = await fetch(`${BASE}${path}`, {
-    headers: { 'X-Auth-Token': API_KEY, Accept: 'application/json' },
-  });
-  if (!res.ok) {
-    const body = await res.text().catch(() => '');
-    throw new Error(`HTTP ${res.status} ${path}: ${body.slice(0, 200)}`);
-  }
+async function apiGet(url) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`HTTP ${res.status} ${url.slice(0, 80)}`);
   return res.json();
 }
 
-// ── Data fetchers ─────────────────────────────────────────────────────────────
+// ── Group name map ────────────────────────────────────────────────────────────
+// Returns { eventId → 'Group A', ... } for all 72 group-stage matches.
 
-async function fetchWC2026() {
-  const data = await apiGet('/competitions/WC/matches?season=2026');
-  return data.matches ?? [];
-}
-
-// International Friendlies — available on free tier for the current season.
-// football-data.org competition code FRNL covers senior international matches.
-async function fetchFriendlies() {
-  try {
-    const data = await apiGet('/competitions/FRNL/matches?season=2026');
-    return data.matches ?? [];
-  } catch (e) {
-    console.warn(`Friendlies not available (${e.message}) — skipping`);
-    return [];
+async function buildGroupMap() {
+  const map = {};
+  for (let g = 1; g <= 12; g++) {
+    try {
+      const [groupData, eventsData] = await Promise.all([
+        apiGet(`${CORE}/seasons/2026/types/1/groups/${g}`),
+        apiGet(`${CORE}/seasons/2026/types/1/groups/${g}/events?limit=10`),
+      ]);
+      const name = groupData.name ?? `Group ${String.fromCharCode(64 + g)}`;
+      for (const item of (eventsData.items ?? [])) {
+        const m = String(item.$ref ?? '').match(/\/events\/(\d+)/);
+        if (m) map[m[1]] = name;
+      }
+    } catch (e) {
+      console.warn(`  Group ${g} error: ${e.message}`);
+    }
   }
+  return map;
 }
 
-// ── Transform a single API match → app fixture format ────────────────────────
+// ── Round mapping ─────────────────────────────────────────────────────────────
 
-function transformMatch(m) {
-  const homeTla = normalizeTla(m.homeTeam?.tla);
-  const awayTla = normalizeTla(m.awayTeam?.tla);
+function mapRound(seasonSlug) {
+  const m = {
+    'group-stage':   'Group Stage',
+    'round-of-32':   'Round of 32',
+    'round-of-16':   'Round of 16',
+    'quarterfinals': 'Quarter-Finals',
+    'semifinals':    'Semi-Finals',
+    '3rd-place':     'Third Place',
+    'final':         'Final',
+  };
+  return m[seasonSlug] ?? 'Group Stage';
+}
+
+// ── Status mapping ────────────────────────────────────────────────────────────
+
+function mapStatus(state, completed) {
+  if (state === 'in') return 'live';
+  if (state === 'post' || completed) return 'finished';
+  return 'scheduled';
+}
+
+// ── Transform ESPN event → fixture ───────────────────────────────────────────
+
+function transformEvent(event, groupMap) {
+  const comp = event.competitions?.[0];
+  if (!comp) return null;
+
+  const home = comp.competitors?.find(c => c.homeAway === 'home');
+  const away = comp.competitors?.find(c => c.homeAway === 'away');
+  if (!home || !away) return null;
+
+  const homeTla = normalizeTla(home.team?.abbreviation);
+  const awayTla = normalizeTla(away.team?.abbreviation);
   if (!homeTla || !awayTla) return null;
 
-  const home = TEAMS[homeTla];
-  const away = TEAMS[awayTla];
-  if (!home || !away) return null; // not a WC-qualified team
+  const homeTeam = TEAMS[homeTla];
+  const awayTeam = TEAMS[awayTla];
 
-  const status    = mapStatus(m.status);
-  const homeScore = m.score?.fullTime?.home ?? null;
-  const awayScore = m.score?.fullTime?.away ?? null;
+  const statusType = comp.status?.type ?? {};
+  const statusStr  = mapStatus(statusType.state, statusType.completed);
+
+  const homeScore = statusStr !== 'scheduled' ? (parseInt(home.score) ?? null) : null;
+  const awayScore = statusStr !== 'scheduled' ? (parseInt(away.score) ?? null) : null;
+  const minute    = statusStr === 'live'
+    ? (Math.floor(comp.status?.clock ?? 0) || null)
+    : null;
+
+  const round     = mapRound(event.season?.slug);
+  const groupName = groupMap[event.id] ?? null;
 
   return {
-    id:            String(m.id),
+    id:            event.id,
     homeTeamId:    homeTla,
-    homeTeamName:  home.name,
-    homeTeamFlag:  home.flag,
+    homeTeamName:  homeTeam?.name ?? home.team?.displayName ?? homeTla,
+    homeTeamFlag:  homeTeam?.flag ?? '🏳️',
     awayTeamId:    awayTla,
-    awayTeamName:  away.name,
-    awayTeamFlag:  away.flag,
-    kickoffUtc:    m.utcDate,
-    status,
-    homeScore:     status !== 'scheduled' ? homeScore : null,
-    awayScore:     status !== 'scheduled' ? awayScore : null,
-    minutePlayed:  status === 'live' ? (m.minute ?? null) : null,
-    round:         mapRound(m.stage),
-    groupName:     mapGroup(m.group),
+    awayTeamName:  awayTeam?.name ?? away.team?.displayName ?? awayTla,
+    awayTeamFlag:  awayTeam?.flag ?? '🏳️',
+    kickoffUtc:    event.date,
+    status:        statusStr,
+    homeScore,
+    awayScore,
+    minutePlayed:  minute,
+    round,
+    groupName,
   };
 }
 
-// ── Elimination logic ─────────────────────────────────────────────────────────
-// A team is eliminated when it loses a finished knockout match.
-// Group-stage elimination requires knowing final standings, which the admin
-// triggers manually via the Sync button after the group stage is complete.
+// ── Date range ────────────────────────────────────────────────────────────────
+// WC 2026: June 11 – July 19, 2026
 
-const KNOCKOUT_ROUNDS = new Set([
+function wcDates() {
+  const dates = [];
+  const d = new Date('2026-06-11T00:00:00Z');
+  const end = new Date('2026-07-20T00:00:00Z');
+  while (d < end) {
+    dates.push(d.toISOString().slice(0, 10).replace(/-/g, ''));
+    d.setUTCDate(d.getUTCDate() + 1);
+  }
+  return dates;
+}
+
+// ── Elimination ───────────────────────────────────────────────────────────────
+
+const KNOCKOUT = new Set([
   'Round of 32', 'Round of 16', 'Quarter-Finals', 'Semi-Finals', 'Third Place', 'Final',
 ]);
 
-function computeEliminatedIds(fixtures) {
-  const eliminated = new Set();
-
+function computeEliminated(fixtures) {
+  const out = new Set();
   for (const f of fixtures) {
     if (f.status !== 'finished') continue;
-    if (!KNOCKOUT_ROUNDS.has(f.round)) continue;
+    if (!KNOCKOUT.has(f.round)) continue;
     if (f.homeScore == null || f.awayScore == null) continue;
-
-    if (f.homeScore < f.awayScore) eliminated.add(f.homeTeamId);
-    else if (f.awayScore < f.homeScore) eliminated.add(f.awayTeamId);
-    // draws → extra time / penalties handled by score.winner in some APIs;
-    // extend here if needed.
+    if (f.homeScore < f.awayScore) out.add(f.homeTeamId);
+    else if (f.awayScore < f.homeScore) out.add(f.awayTeamId);
   }
-
-  return [...eliminated].sort();
+  return [...out].sort();
 }
 
-// ── Determine currentStage ────────────────────────────────────────────────────
+// ── Current stage ─────────────────────────────────────────────────────────────
 
 function currentStage(fixtures) {
   const priority = [
@@ -228,108 +264,65 @@ function currentStage(fixtures) {
     'Round of 16', 'Round of 32', 'Group Stage',
   ];
   const active = fixtures.filter(f => f.status === 'live' || f.status === 'finished');
-  for (const stage of priority) {
-    if (active.some(f => f.round === stage)) return stage;
+  for (const s of priority) {
+    if (active.some(f => f.round === s)) return s;
   }
-  // Nothing active yet — show earliest upcoming round
   const upcoming = fixtures.filter(f => f.status === 'scheduled');
-  for (const stage of priority.reverse()) {
-    if (upcoming.some(f => f.round === stage)) return stage;
+  for (const s of [...priority].reverse()) {
+    if (upcoming.some(f => f.round === s)) return s;
   }
-  return fixtures.length > 0 ? (fixtures[0].round ?? 'Friendlies') : 'Group Stage';
-}
-
-// ── Placeholder (no API key) ──────────────────────────────────────────────────
-
-function buildPlaceholder() {
-  return {
-    lastUpdated: new Date().toISOString(),
-    currentStage: 'Friendlies',
-    fixtures: [
-      fixture('test-001', 'ARG', 'GER', '2026-06-04T19:00:00Z', 'finished', 2, 1),
-      fixture('test-002', 'FRA', 'BRA', '2026-06-05T20:00:00Z', 'scheduled'),
-      fixture('test-003', 'ENG', 'JPN', '2026-06-06T19:45:00Z', 'scheduled'),
-      fixture('test-004', 'ESP', 'ITA', '2026-06-07T20:45:00Z', 'scheduled'),
-      fixture('test-005', 'USA', 'MEX', '2026-06-07T23:00:00Z', 'scheduled'),
-      fixture('test-006', 'POR', 'MAR', '2026-06-09T19:00:00Z', 'scheduled'),
-      fixture('test-007', 'NED', 'COL', '2026-06-08T14:00:00Z', 'scheduled'),
-      fixture('test-008', 'GER', 'TUR', '2026-06-05T18:00:00Z', 'scheduled'),
-    ],
-    eliminatedTeamIds: [],
-  };
-}
-
-function fixture(id, homeTla, awayTla, kickoffUtc, status, homeScore = null, awayScore = null) {
-  const home = TEAMS[homeTla];
-  const away = TEAMS[awayTla];
-  return {
-    id,
-    homeTeamId:   homeTla,
-    homeTeamName: home.name,
-    homeTeamFlag: home.flag,
-    awayTeamId:   awayTla,
-    awayTeamName: away.name,
-    awayTeamFlag: away.flag,
-    kickoffUtc,
-    status,
-    homeScore:    status !== 'scheduled' ? homeScore : null,
-    awayScore:    status !== 'scheduled' ? awayScore : null,
-    minutePlayed: null,
-    round:        'Friendly',
-    groupName:    null,
-  };
+  return 'Group Stage';
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
-  if (!API_KEY) {
-    console.warn('⚠  FOOTBALL_API_KEY not set — writing placeholder fixtures');
-    writeFileSync(OUTPUT, JSON.stringify(buildPlaceholder(), null, 2) + '\n');
-    return;
-  }
+  console.log('⚽  Sweeper fixture fetch (ESPN, no API key)\n');
 
-  let apiMatches = [];
-  try {
-    const [wc, friendlies] = await Promise.all([fetchWC2026(), fetchFriendlies()]);
-    apiMatches = [...wc, ...friendlies];
-    console.log(`Fetched ${wc.length} WC matches + ${friendlies.length} friendly matches`);
-  } catch (e) {
-    console.error('API fetch failed:', e.message);
-    if (existsSync(OUTPUT)) {
-      console.log('Keeping existing fixtures.json unchanged');
-      return;
-    }
-    writeFileSync(OUTPUT, JSON.stringify(buildPlaceholder(), null, 2) + '\n');
-    return;
-  }
+  console.log('Building group map...');
+  const groupMap = await buildGroupMap();
+  console.log(`  ✓ ${Object.keys(groupMap).length} group-stage events mapped\n`);
 
-  // Transform and filter to WC-qualified teams only
-  const fixtures = apiMatches.map(transformMatch).filter(Boolean);
-
-  // Deduplicate (WC and friendly endpoints can overlap)
+  console.log('Fetching fixtures by date...');
+  const fixtures = [];
   const seen = new Set();
-  const unique = fixtures.filter(f => {
-    if (seen.has(f.id)) return false;
-    seen.add(f.id);
-    return true;
-  });
+
+  for (const date of wcDates()) {
+    try {
+      const data = await apiGet(`${SITE}/scoreboard?dates=${date}`);
+      const events = data.events ?? [];
+      for (const ev of events) {
+        if (seen.has(ev.id)) continue;
+        seen.add(ev.id);
+        const f = transformEvent(ev, groupMap);
+        if (f) fixtures.push(f);
+      }
+      if (events.length) console.log(`  ${date}: ${events.length} match(es)`);
+    } catch (e) {
+      console.warn(`  ${date}: ${e.message}`);
+    }
+  }
 
   // Sort chronologically
-  unique.sort((a, b) => a.kickoffUtc.localeCompare(b.kickoffUtc));
+  fixtures.sort((a, b) => a.kickoffUtc.localeCompare(b.kickoffUtc));
 
-  const eliminatedTeamIds = computeEliminatedIds(unique);
-  const stage = currentStage(unique);
+  // Warn about any teams without flags in our registry
+  const unknown = new Set(
+    fixtures.flatMap(f => [f.homeTeamId, f.awayTeamId]).filter(t => !TEAMS[t])
+  );
+  if (unknown.size) {
+    console.warn(`\n⚠  Unknown TLAs (add flags to TEAMS map): ${[...unknown].join(', ')}`);
+  }
 
   const output = {
-    lastUpdated: new Date().toISOString(),
-    currentStage: stage,
-    fixtures: unique,
-    eliminatedTeamIds,
+    lastUpdated:      new Date().toISOString(),
+    currentStage:     currentStage(fixtures),
+    fixtures,
+    eliminatedTeamIds: computeEliminated(fixtures),
   };
 
   writeFileSync(OUTPUT, JSON.stringify(output, null, 2) + '\n');
-  console.log(`✓ Written ${unique.length} fixtures, stage="${stage}", ${eliminatedTeamIds.length} eliminated`);
+  console.log(`\n✓ Written ${fixtures.length} fixtures — stage: "${output.currentStage}"`);
 }
 
 main().catch(e => { console.error('Fatal:', e); process.exit(1); });

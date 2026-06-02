@@ -2,8 +2,8 @@ name: Update Fixtures
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # every 5 minutes — GitHub throttles to ~5 min minimum
-  workflow_dispatch:         # allow manual runs from the Actions tab
+    - cron: '*/30 * * * *'  # every 30 minutes during the tournament
+  workflow_dispatch:         # manual run from the Actions tab
 
 permissions:
   contents: write
@@ -19,10 +19,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Fetch latest fixtures
+      - name: Fetch latest fixtures from ESPN
         run: node scripts/fetch-fixtures.mjs
-        env:
-          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
 
       - name: Commit and push if fixtures changed
         run: |
