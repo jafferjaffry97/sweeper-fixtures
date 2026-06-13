@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T18:06:36.622Z",
+  "lastUpdated": "2026-06-13T20:00:48.163Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -75,10 +75,10 @@
       "awayTeamName": "Switzerland",
       "awayTeamFlag": "🇨🇭",
       "kickoffUtc": "2026-06-13T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minutePlayed": 2700,
       "round": "Group Stage",
       "groupName": "Group B"
     },
