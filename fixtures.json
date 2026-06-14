@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T19:40:04.354Z",
+  "lastUpdated": "2026-06-14T21:11:18.950Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -155,10 +155,10 @@
       "awayTeamName": "Japan",
       "awayTeamFlag": "🇯🇵",
       "kickoffUtc": "2026-06-14T20:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minutePlayed": 3120,
       "round": "Group Stage",
       "groupName": "Group F"
     },
