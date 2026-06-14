@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T17:56:54.972Z",
+  "lastUpdated": "2026-06-14T19:40:04.354Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -139,10 +139,10 @@
       "awayTeamName": "Curaçao",
       "awayTeamFlag": "🇨🇼",
       "kickoffUtc": "2026-06-14T17:00Z",
-      "status": "live",
-      "homeScore": 3,
+      "status": "finished",
+      "homeScore": 7,
       "awayScore": 1,
-      "minutePlayed": 2700,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group E"
     },
