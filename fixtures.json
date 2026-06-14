@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-14T01:42:38.017Z",
+  "lastUpdated": "2026-06-14T06:39:30.216Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -107,10 +107,10 @@
       "awayTeamName": "Scotland",
       "awayTeamFlag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
       "kickoffUtc": "2026-06-14T01:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
       "awayScore": 1,
-      "minutePlayed": 2340,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group C"
     },
@@ -123,9 +123,9 @@
       "awayTeamName": "Turkey",
       "awayTeamFlag": "🇹🇷",
       "kickoffUtc": "2026-06-14T04:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 0,
       "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group D"
