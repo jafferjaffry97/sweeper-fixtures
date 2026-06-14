@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-13T23:03:22.252Z",
+  "lastUpdated": "2026-06-14T01:42:38.017Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -91,10 +91,10 @@
       "awayTeamName": "Morocco",
       "awayTeamFlag": "🇲🇦",
       "kickoffUtc": "2026-06-13T22:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 1,
       "awayScore": 1,
-      "minutePlayed": 2700,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group C"
     },
@@ -107,10 +107,10 @@
       "awayTeamName": "Scotland",
       "awayTeamFlag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
       "kickoffUtc": "2026-06-14T01:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minutePlayed": 2340,
       "round": "Group Stage",
       "groupName": "Group C"
     },
