@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T17:30:20.016Z",
+  "lastUpdated": "2026-06-15T20:39:19.104Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -203,10 +203,10 @@
       "awayTeamName": "Cape Verde",
       "awayTeamFlag": "🇨🇻",
       "kickoffUtc": "2026-06-15T16:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
       "awayScore": 0,
-      "minutePlayed": 4140,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group H"
     },
@@ -219,10 +219,10 @@
       "awayTeamName": "Egypt",
       "awayTeamFlag": "🇪🇬",
       "kickoffUtc": "2026-06-15T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 1,
+      "minutePlayed": 4620,
       "round": "Group Stage",
       "groupName": "Group G"
     },
