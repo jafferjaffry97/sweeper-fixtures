@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T00:07:08.832Z",
+  "lastUpdated": "2026-06-15T05:36:38.131Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -171,10 +171,10 @@
       "awayTeamName": "Ecuador",
       "awayTeamFlag": "🇪🇨",
       "kickoffUtc": "2026-06-14T23:00Z",
-      "status": "live",
-      "homeScore": 0,
+      "status": "finished",
+      "homeScore": 1,
       "awayScore": 0,
-      "minutePlayed": 2700,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group E"
     },
@@ -187,9 +187,9 @@
       "awayTeamName": "Tunisia",
       "awayTeamFlag": "🇹🇳",
       "kickoffUtc": "2026-06-15T02:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "finished",
+      "homeScore": 5,
+      "awayScore": 1,
       "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group F"
