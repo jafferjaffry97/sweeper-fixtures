@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T18:14:59.963Z",
+  "lastUpdated": "2026-06-16T21:25:47.221Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -267,9 +267,9 @@
       "awayTeamName": "Senegal",
       "awayTeamFlag": "🇸🇳",
       "kickoffUtc": "2026-06-16T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 1,
       "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group I"
