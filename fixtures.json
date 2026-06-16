@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T02:07:05.079Z",
+  "lastUpdated": "2026-06-16T08:26:14.449Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -251,10 +251,10 @@
       "awayTeamName": "New Zealand",
       "awayTeamFlag": "🇳🇿",
       "kickoffUtc": "2026-06-16T01:00Z",
-      "status": "live",
-      "homeScore": 1,
-      "awayScore": 1,
-      "minutePlayed": 2700,
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 2,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group G"
     },
