@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T23:03:54.656Z",
+  "lastUpdated": "2026-06-17T02:01:01.506Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -283,10 +283,10 @@
       "awayTeamName": "Norway",
       "awayTeamFlag": "🇳🇴",
       "kickoffUtc": "2026-06-16T22:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 1,
-      "awayScore": 2,
-      "minutePlayed": 2700,
+      "awayScore": 4,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group I"
     },
@@ -299,10 +299,10 @@
       "awayTeamName": "Algeria",
       "awayTeamFlag": "🇩🇿",
       "kickoffUtc": "2026-06-17T01:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minutePlayed": 2700,
       "round": "Group Stage",
       "groupName": "Group J"
     },
