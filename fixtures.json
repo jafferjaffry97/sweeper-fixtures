@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T02:01:01.506Z",
+  "lastUpdated": "2026-06-17T07:32:51.855Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -299,10 +299,10 @@
       "awayTeamName": "Algeria",
       "awayTeamFlag": "🇩🇿",
       "kickoffUtc": "2026-06-17T01:00Z",
-      "status": "live",
-      "homeScore": 1,
+      "status": "finished",
+      "homeScore": 3,
       "awayScore": 0,
-      "minutePlayed": 2700,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group J"
     },
@@ -315,9 +315,9 @@
       "awayTeamName": "Jordan",
       "awayTeamFlag": "🇯🇴",
       "kickoffUtc": "2026-06-17T04:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 1,
       "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group J"
