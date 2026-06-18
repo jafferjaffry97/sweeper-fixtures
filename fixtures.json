@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T00:17:55.837Z",
+  "lastUpdated": "2026-06-18T05:16:22.365Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -363,10 +363,10 @@
       "awayTeamName": "Panama",
       "awayTeamFlag": "🇵🇦",
       "kickoffUtc": "2026-06-17T23:00Z",
-      "status": "live",
-      "homeScore": 0,
+      "status": "finished",
+      "homeScore": 1,
       "awayScore": 0,
-      "minutePlayed": 3360,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group L"
     },
@@ -379,9 +379,9 @@
       "awayTeamName": "Colombia",
       "awayTeamFlag": "🇨🇴",
       "kickoffUtc": "2026-06-18T02:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 3,
       "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group K"
