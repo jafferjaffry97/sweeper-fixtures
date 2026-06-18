@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T21:33:41.582Z",
+  "lastUpdated": "2026-06-18T23:44:17.665Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -427,10 +427,10 @@
       "awayTeamName": "Qatar",
       "awayTeamFlag": "🇶🇦",
       "kickoffUtc": "2026-06-18T22:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 5,
+      "awayScore": 0,
+      "minutePlayed": 4920,
       "round": "Group Stage",
       "groupName": "Group B"
     },
