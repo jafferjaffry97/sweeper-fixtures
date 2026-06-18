@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T16:29:52.377Z",
+  "lastUpdated": "2026-06-18T19:03:32.180Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -395,10 +395,10 @@
       "awayTeamName": "South Africa",
       "awayTeamFlag": "🇿🇦",
       "kickoffUtc": "2026-06-18T16:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 1,
-      "awayScore": 0,
-      "minutePlayed": 1740,
+      "awayScore": 1,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group A"
     },
@@ -411,10 +411,10 @@
       "awayTeamName": "Bosnia & Herzegovina",
       "awayTeamFlag": "🇧🇦",
       "kickoffUtc": "2026-06-18T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 180,
       "round": "Group Stage",
       "groupName": "Group B"
     },
