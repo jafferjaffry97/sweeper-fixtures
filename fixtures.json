@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T12:50:41.025Z",
+  "lastUpdated": "2026-06-18T16:29:52.377Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -395,10 +395,10 @@
       "awayTeamName": "South Africa",
       "awayTeamFlag": "🇿🇦",
       "kickoffUtc": "2026-06-18T16:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minutePlayed": 1740,
       "round": "Group Stage",
       "groupName": "Group A"
     },
