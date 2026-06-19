@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T21:43:24.493Z",
+  "lastUpdated": "2026-06-19T22:55:40.855Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -475,10 +475,10 @@
       "awayTeamName": "Morocco",
       "awayTeamFlag": "🇲🇦",
       "kickoffUtc": "2026-06-19T22:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minutePlayed": 2700,
       "round": "Group Stage",
       "groupName": "Group C"
     },
