@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-18T23:44:17.665Z",
+  "lastUpdated": "2026-06-19T04:08:40.570Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -427,10 +427,10 @@
       "awayTeamName": "Qatar",
       "awayTeamFlag": "🇶🇦",
       "kickoffUtc": "2026-06-18T22:00Z",
-      "status": "live",
-      "homeScore": 5,
+      "status": "finished",
+      "homeScore": 6,
       "awayScore": 0,
-      "minutePlayed": 4920,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group B"
     },
@@ -443,9 +443,9 @@
       "awayTeamName": "South Korea",
       "awayTeamFlag": "🇰🇷",
       "kickoffUtc": "2026-06-19T01:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 0,
       "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group A"
@@ -1252,9 +1252,9 @@
     },
     {
       "id": "760491",
-      "homeTeamId": "1A",
-      "homeTeamName": "Group A Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "MEX",
+      "homeTeamName": "Mexico",
+      "homeTeamFlag": "🇲🇽",
       "awayTeamId": "3RD",
       "awayTeamName": "Third Place Group C/E/F/H/I",
       "awayTeamFlag": "🏳️",
