@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-19T20:14:25.693Z",
+  "lastUpdated": "2026-06-19T21:43:24.493Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -459,10 +459,10 @@
       "awayTeamName": "Australia",
       "awayTeamFlag": "🇦🇺",
       "kickoffUtc": "2026-06-19T19:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 2,
       "awayScore": 0,
-      "minutePlayed": 2880,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group D"
     },
