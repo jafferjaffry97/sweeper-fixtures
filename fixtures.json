@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T20:50:10.529Z",
+  "lastUpdated": "2026-06-20T22:04:44.321Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -539,10 +539,10 @@
       "awayTeamName": "Ivory Coast",
       "awayTeamFlag": "🇨🇮",
       "kickoffUtc": "2026-06-20T20:00Z",
-      "status": "live",
-      "homeScore": 0,
+      "status": "finished",
+      "homeScore": 2,
       "awayScore": 1,
-      "minutePlayed": 2700,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group E"
     },
