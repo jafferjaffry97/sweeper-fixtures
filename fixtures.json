@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T04:50:41.817Z",
+  "lastUpdated": "2026-06-20T08:20:36.542Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -507,10 +507,10 @@
       "awayTeamName": "Paraguay",
       "awayTeamFlag": "🇵🇾",
       "kickoffUtc": "2026-06-20T03:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
       "awayScore": 1,
-      "minutePlayed": 4980,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group D"
     },
@@ -1300,9 +1300,9 @@
     },
     {
       "id": "760494",
-      "homeTeamId": "1D",
-      "homeTeamName": "Group D Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "USA",
+      "homeTeamName": "USA",
+      "homeTeamFlag": "🇺🇸",
       "awayTeamId": "3RD",
       "awayTeamName": "Third Place Group B/E/F/I/J",
       "awayTeamFlag": "🏳️",
