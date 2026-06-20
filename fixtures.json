@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T16:16:24.926Z",
+  "lastUpdated": "2026-06-20T17:54:06.789Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -523,10 +523,10 @@
       "awayTeamName": "Sweden",
       "awayTeamFlag": "🇸🇪",
       "kickoffUtc": "2026-06-20T17:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 2,
+      "awayScore": 0,
+      "minutePlayed": 2700,
       "round": "Group Stage",
       "groupName": "Group F"
     },
