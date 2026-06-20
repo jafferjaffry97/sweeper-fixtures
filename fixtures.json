@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-20T00:12:10.187Z",
+  "lastUpdated": "2026-06-20T04:50:41.817Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -491,9 +491,9 @@
       "awayTeamName": "Haiti",
       "awayTeamFlag": "🇭🇹",
       "kickoffUtc": "2026-06-20T00:30Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 0,
       "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group C"
@@ -507,10 +507,10 @@
       "awayTeamName": "Paraguay",
       "awayTeamFlag": "🇵🇾",
       "kickoffUtc": "2026-06-20T03:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minutePlayed": 4980,
       "round": "Group Stage",
       "groupName": "Group D"
     },
