@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T16:14:54.305Z",
+  "lastUpdated": "2026-06-21T18:04:39.736Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -587,10 +587,10 @@
       "awayTeamName": "Saudi Arabia",
       "awayTeamFlag": "🇸🇦",
       "kickoffUtc": "2026-06-21T16:00Z",
-      "status": "live",
-      "homeScore": 1,
+      "status": "finished",
+      "homeScore": 4,
       "awayScore": 0,
-      "minutePlayed": 840,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group H"
     },
