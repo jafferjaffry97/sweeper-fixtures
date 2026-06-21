@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-21T20:11:57.558Z",
+  "lastUpdated": "2026-06-21T21:53:40.088Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -603,10 +603,10 @@
       "awayTeamName": "Iran",
       "awayTeamFlag": "🇮🇷",
       "kickoffUtc": "2026-06-21T19:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
       "awayScore": 0,
-      "minutePlayed": 2760,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group G"
     },
