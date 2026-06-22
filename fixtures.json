@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T02:01:44.364Z",
+  "lastUpdated": "2026-06-22T08:37:33.169Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -635,10 +635,10 @@
       "awayTeamName": "Egypt",
       "awayTeamFlag": "🇪🇬",
       "kickoffUtc": "2026-06-22T01:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 1,
-      "awayScore": 0,
-      "minutePlayed": 2700,
+      "awayScore": 3,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group G"
     },
