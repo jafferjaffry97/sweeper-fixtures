@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T18:45:19.785Z",
+  "lastUpdated": "2026-06-22T21:30:56.081Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -651,10 +651,10 @@
       "awayTeamName": "Austria",
       "awayTeamFlag": "🇦🇹",
       "kickoffUtc": "2026-06-22T17:00Z",
-      "status": "live",
-      "homeScore": 1,
+      "status": "finished",
+      "homeScore": 2,
       "awayScore": 0,
-      "minutePlayed": 4860,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group J"
     },
@@ -667,10 +667,10 @@
       "awayTeamName": "Iraq",
       "awayTeamFlag": "🇮🇶",
       "kickoffUtc": "2026-06-22T21:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minutePlayed": 1800,
       "round": "Group Stage",
       "groupName": "Group I"
     },
