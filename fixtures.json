@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T15:46:45.631Z",
+  "lastUpdated": "2026-06-23T17:52:36.462Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -715,10 +715,10 @@
       "awayTeamName": "Uzbekistan",
       "awayTeamFlag": "🇺🇿",
       "kickoffUtc": "2026-06-23T17:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 3,
+      "awayScore": 0,
+      "minutePlayed": 2700,
       "round": "Group Stage",
       "groupName": "Group K"
     },
