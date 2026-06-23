@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-22T23:18:13.333Z",
+  "lastUpdated": "2026-06-23T01:30:02.798Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -667,10 +667,10 @@
       "awayTeamName": "Iraq",
       "awayTeamFlag": "🇮🇶",
       "kickoffUtc": "2026-06-22T21:00Z",
-      "status": "live",
-      "homeScore": 1,
+      "status": "finished",
+      "homeScore": 3,
       "awayScore": 0,
-      "minutePlayed": 2700,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group I"
     },
@@ -683,10 +683,10 @@
       "awayTeamName": "Senegal",
       "awayTeamFlag": "🇸🇳",
       "kickoffUtc": "2026-06-23T00:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 3,
+      "awayScore": 1,
+      "minutePlayed": 4200,
       "round": "Group Stage",
       "groupName": "Group I"
     },
