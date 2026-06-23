@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T21:56:10.187Z",
+  "lastUpdated": "2026-06-23T23:08:53.532Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -731,10 +731,10 @@
       "awayTeamName": "Ghana",
       "awayTeamFlag": "🇬🇭",
       "kickoffUtc": "2026-06-23T20:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
       "awayScore": 0,
-      "minutePlayed": 5400,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group L"
     },
@@ -747,10 +747,10 @@
       "awayTeamName": "Croatia",
       "awayTeamFlag": "🇭🇷",
       "kickoffUtc": "2026-06-23T23:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 480,
       "round": "Group Stage",
       "groupName": "Group L"
     },
