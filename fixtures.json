@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T20:01:52.588Z",
+  "lastUpdated": "2026-06-23T21:56:10.187Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -734,7 +734,7 @@
       "status": "live",
       "homeScore": 0,
       "awayScore": 0,
-      "minutePlayed": 120,
+      "minutePlayed": 5400,
       "round": "Group Stage",
       "groupName": "Group L"
     },
