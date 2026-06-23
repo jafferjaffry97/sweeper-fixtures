@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T01:30:02.798Z",
+  "lastUpdated": "2026-06-23T05:47:59.497Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -683,10 +683,10 @@
       "awayTeamName": "Senegal",
       "awayTeamFlag": "🇸🇳",
       "kickoffUtc": "2026-06-23T00:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 3,
-      "awayScore": 1,
-      "minutePlayed": 4200,
+      "awayScore": 2,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group I"
     },
@@ -699,9 +699,9 @@
       "awayTeamName": "Algeria",
       "awayTeamFlag": "🇩🇿",
       "kickoffUtc": "2026-06-23T03:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 2,
       "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group J"
@@ -1380,9 +1380,9 @@
     },
     {
       "id": "760500",
-      "homeTeamId": "1J",
-      "homeTeamName": "Group J Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "ARG",
+      "homeTeamName": "Argentina",
+      "homeTeamFlag": "🇦🇷",
       "awayTeamId": "2H",
       "awayTeamName": "Group H 2nd Place",
       "awayTeamFlag": "🏳️",
