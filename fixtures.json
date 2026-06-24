@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T01:25:03.678Z",
+  "lastUpdated": "2026-06-24T05:35:57.102Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -763,9 +763,9 @@
       "awayTeamName": "Congo DR",
       "awayTeamFlag": "🇨🇩",
       "kickoffUtc": "2026-06-24T02:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 0,
       "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group K"
