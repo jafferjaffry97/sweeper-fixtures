@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T17:26:41.278Z",
+  "lastUpdated": "2026-06-24T19:11:56.607Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -779,10 +779,10 @@
       "awayTeamName": "Qatar",
       "awayTeamFlag": "🇶🇦",
       "kickoffUtc": "2026-06-24T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 660,
       "round": "Group Stage",
       "groupName": "Group B"
     },
@@ -795,10 +795,10 @@
       "awayTeamName": "Canada",
       "awayTeamFlag": "🇨🇦",
       "kickoffUtc": "2026-06-24T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 660,
       "round": "Group Stage",
       "groupName": "Group B"
     },
