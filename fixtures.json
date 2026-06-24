@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-23T23:08:53.532Z",
+  "lastUpdated": "2026-06-24T01:25:03.678Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -747,10 +747,10 @@
       "awayTeamName": "Croatia",
       "awayTeamFlag": "🇭🇷",
       "kickoffUtc": "2026-06-23T23:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
-      "awayScore": 0,
-      "minutePlayed": 480,
+      "awayScore": 1,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group L"
     },
