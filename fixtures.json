@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T21:09:45.758Z",
+  "lastUpdated": "2026-06-24T22:46:38.807Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -811,10 +811,10 @@
       "awayTeamName": "Haiti",
       "awayTeamFlag": "🇭🇹",
       "kickoffUtc": "2026-06-24T22:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 2,
+      "awayScore": 2,
+      "minutePlayed": 2700,
       "round": "Group Stage",
       "groupName": "Group C"
     },
@@ -827,10 +827,10 @@
       "awayTeamName": "Brazil",
       "awayTeamFlag": "🇧🇷",
       "kickoffUtc": "2026-06-24T22:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minutePlayed": 2700,
       "round": "Group Stage",
       "groupName": "Group C"
     },
