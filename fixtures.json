@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T22:20:12.599Z",
+  "lastUpdated": "2026-06-25T23:52:10.276Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -907,10 +907,10 @@
       "awayTeamName": "Sweden",
       "awayTeamFlag": "🇸🇪",
       "kickoffUtc": "2026-06-25T23:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 2700,
       "round": "Group Stage",
       "groupName": "Group F"
     },
@@ -923,10 +923,10 @@
       "awayTeamName": "Netherlands",
       "awayTeamFlag": "🇳🇱",
       "kickoffUtc": "2026-06-25T23:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 2,
+      "minutePlayed": 2700,
       "round": "Group Stage",
       "groupName": "Group F"
     },
