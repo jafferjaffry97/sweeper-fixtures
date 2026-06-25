@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T18:32:12.288Z",
+  "lastUpdated": "2026-06-25T20:54:30.042Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -875,10 +875,10 @@
       "awayTeamName": "Ivory Coast",
       "awayTeamFlag": "🇨🇮",
       "kickoffUtc": "2026-06-25T20:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minutePlayed": 2700,
       "round": "Group Stage",
       "groupName": "Group E"
     },
@@ -891,10 +891,10 @@
       "awayTeamName": "Germany",
       "awayTeamFlag": "🇩🇪",
       "kickoffUtc": "2026-06-25T20:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 1,
+      "minutePlayed": 2700,
       "round": "Group Stage",
       "groupName": "Group E"
     },
