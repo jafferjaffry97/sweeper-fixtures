@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T17:45:41.448Z",
+  "lastUpdated": "2026-06-26T19:44:41.481Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -971,10 +971,10 @@
       "awayTeamName": "France",
       "awayTeamFlag": "🇫🇷",
       "kickoffUtc": "2026-06-26T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 3,
+      "minutePlayed": 2580,
       "round": "Group Stage",
       "groupName": "Group I"
     },
@@ -987,10 +987,10 @@
       "awayTeamName": "Iraq",
       "awayTeamFlag": "🇮🇶",
       "kickoffUtc": "2026-06-26T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minutePlayed": 2520,
       "round": "Group Stage",
       "groupName": "Group I"
     },
