@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T03:32:48.594Z",
+  "lastUpdated": "2026-06-26T07:51:13.805Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -939,10 +939,10 @@
       "awayTeamName": "Australia",
       "awayTeamFlag": "🇦🇺",
       "kickoffUtc": "2026-06-26T02:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
       "awayScore": 0,
-      "minutePlayed": 4140,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group D"
     },
@@ -955,10 +955,10 @@
       "awayTeamName": "USA",
       "awayTeamFlag": "🇺🇸",
       "kickoffUtc": "2026-06-26T02:00Z",
-      "status": "live",
-      "homeScore": 2,
+      "status": "finished",
+      "homeScore": 3,
       "awayScore": 2,
-      "minutePlayed": 4200,
+      "minutePlayed": null,
       "round": "Group Stage",
       "groupName": "Group D"
     },
@@ -1364,9 +1364,9 @@
     },
     {
       "id": "760499",
-      "homeTeamId": "2D",
-      "homeTeamName": "Group D 2nd Place",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "AUS",
+      "homeTeamName": "Australia",
+      "homeTeamFlag": "🇦🇺",
       "awayTeamId": "2G",
       "awayTeamName": "Group G 2nd Place",
       "awayTeamFlag": "🏳️",
