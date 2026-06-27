@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-27T21:01:18.853Z",
+  "lastUpdated": "2026-06-27T22:35:18.050Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -1067,10 +1067,10 @@
       "awayTeamName": "Ghana",
       "awayTeamFlag": "🇬🇭",
       "kickoffUtc": "2026-06-27T21:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 1,
+      "minutePlayed": 4440,
       "round": "Group Stage",
       "groupName": null
     },
@@ -1083,10 +1083,10 @@
       "awayTeamName": "England",
       "awayTeamFlag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "kickoffUtc": "2026-06-27T21:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 2,
+      "minutePlayed": 4560,
       "round": "Group Stage",
       "groupName": null
     },
