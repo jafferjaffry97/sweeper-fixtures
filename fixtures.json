@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-26T22:44:30.031Z",
+  "lastUpdated": "2026-06-27T00:05:32.796Z",
   "currentStage": "Group Stage",
   "fixtures": [
     {
@@ -1003,10 +1003,10 @@
       "awayTeamName": "Saudi Arabia",
       "awayTeamFlag": "🇸🇦",
       "kickoffUtc": "2026-06-27T00:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 180,
       "round": "Group Stage",
       "groupName": "Group H"
     },
@@ -1019,10 +1019,10 @@
       "awayTeamName": "Spain",
       "awayTeamFlag": "🇪🇸",
       "kickoffUtc": "2026-06-27T00:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 240,
       "round": "Group Stage",
       "groupName": "Group H"
     },
