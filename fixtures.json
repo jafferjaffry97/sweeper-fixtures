@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-28T18:44:09.028Z",
-  "currentStage": "Group Stage",
+  "lastUpdated": "2026-06-28T20:11:51.109Z",
+  "currentStage": "Round of 32",
   "fixtures": [
     {
       "id": "760415",
@@ -1163,10 +1163,10 @@
       "awayTeamName": "Canada",
       "awayTeamFlag": "🇨🇦",
       "kickoffUtc": "2026-06-28T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 3060,
       "round": "Round of 32",
       "groupName": null
     },
