@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-28T20:11:51.109Z",
+  "lastUpdated": "2026-06-28T21:37:26.920Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1163,10 +1163,10 @@
       "awayTeamName": "Canada",
       "awayTeamFlag": "🇨🇦",
       "kickoffUtc": "2026-06-28T19:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
-      "awayScore": 0,
-      "minutePlayed": 3060,
+      "awayScore": 1,
+      "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null
     },
@@ -1412,9 +1412,9 @@
     },
     {
       "id": "760502",
-      "homeTeamId": "RD32",
-      "homeTeamName": "Round of 32 1 Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "CAN",
+      "homeTeamName": "Canada",
+      "homeTeamFlag": "🇨🇦",
       "awayTeamId": "RD32",
       "awayTeamName": "Round of 32 3 Winner",
       "awayTeamFlag": "🏳️",
@@ -1667,5 +1667,7 @@
       "groupName": null
     }
   ],
-  "eliminatedTeamIds": []
+  "eliminatedTeamIds": [
+    "RSA"
+  ]
 }
