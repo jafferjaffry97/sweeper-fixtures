@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T18:09:23.379Z",
+  "lastUpdated": "2026-06-29T20:23:31.131Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1179,10 +1179,10 @@
       "awayTeamName": "Japan",
       "awayTeamFlag": "🇯🇵",
       "kickoffUtc": "2026-06-29T17:00Z",
-      "status": "live",
-      "homeScore": 0,
+      "status": "finished",
+      "homeScore": 2,
       "awayScore": 1,
-      "minutePlayed": 2880,
+      "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null
     },
@@ -1444,9 +1444,9 @@
     },
     {
       "id": "760504",
-      "homeTeamId": "RD32",
-      "homeTeamName": "Round of 32 4 Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "BRA",
+      "homeTeamName": "Brazil",
+      "homeTeamFlag": "🇧🇷",
       "awayTeamId": "RD32",
       "awayTeamName": "Round of 32 6 Winner",
       "awayTeamFlag": "🏳️",
@@ -1668,6 +1668,7 @@
     }
   ],
   "eliminatedTeamIds": [
+    "JPN",
     "RSA"
   ]
 }
