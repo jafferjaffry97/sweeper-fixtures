@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T15:56:19.878Z",
+  "lastUpdated": "2026-06-29T18:09:23.379Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1179,10 +1179,10 @@
       "awayTeamName": "Japan",
       "awayTeamFlag": "🇯🇵",
       "kickoffUtc": "2026-06-29T17:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minutePlayed": 2880,
       "round": "Round of 32",
       "groupName": null
     },
