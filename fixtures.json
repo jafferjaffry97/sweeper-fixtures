@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T00:03:51.280Z",
+  "lastUpdated": "2026-06-30T04:43:54.197Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1211,9 +1211,9 @@
       "awayTeamName": "Morocco",
       "awayTeamFlag": "🇲🇦",
       "kickoffUtc": "2026-06-30T01:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 1,
       "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null
@@ -1415,9 +1415,9 @@
       "homeTeamId": "CAN",
       "homeTeamName": "Canada",
       "homeTeamFlag": "🇨🇦",
-      "awayTeamId": "RD32",
-      "awayTeamName": "Round of 32 3 Winner",
-      "awayTeamFlag": "🏳️",
+      "awayTeamId": "MAR",
+      "awayTeamName": "Morocco",
+      "awayTeamFlag": "🇲🇦",
       "kickoffUtc": "2026-07-04T17:00Z",
       "status": "scheduled",
       "homeScore": null,
