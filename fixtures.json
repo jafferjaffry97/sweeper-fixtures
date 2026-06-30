@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T21:58:40.854Z",
+  "lastUpdated": "2026-06-30T23:19:53.173Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1243,10 +1243,10 @@
       "awayTeamName": "Sweden",
       "awayTeamFlag": "🇸🇪",
       "kickoffUtc": "2026-06-30T21:00Z",
-      "status": "live",
-      "homeScore": 1,
+      "status": "finished",
+      "homeScore": 3,
       "awayScore": 0,
-      "minutePlayed": 2700,
+      "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null
     },
@@ -1431,9 +1431,9 @@
       "homeTeamId": "PAR",
       "homeTeamName": "Paraguay",
       "homeTeamFlag": "🇵🇾",
-      "awayTeamId": "RD32",
-      "awayTeamName": "Round of 32 5 Winner",
-      "awayTeamFlag": "🏳️",
+      "awayTeamId": "FRA",
+      "awayTeamName": "France",
+      "awayTeamFlag": "🇫🇷",
       "kickoffUtc": "2026-07-04T21:00Z",
       "status": "scheduled",
       "homeScore": null,
@@ -1670,6 +1670,7 @@
   "eliminatedTeamIds": [
     "CIV",
     "JPN",
-    "RSA"
+    "RSA",
+    "SWE"
   ]
 }
