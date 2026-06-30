@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T16:03:45.677Z",
+  "lastUpdated": "2026-06-30T18:18:51.421Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1227,10 +1227,10 @@
       "awayTeamName": "Norway",
       "awayTeamFlag": "🇳🇴",
       "kickoffUtc": "2026-06-30T17:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minutePlayed": 3480,
       "round": "Round of 32",
       "groupName": null
     },
