@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T20:28:48.577Z",
+  "lastUpdated": "2026-06-30T21:58:40.854Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1243,10 +1243,10 @@
       "awayTeamName": "Sweden",
       "awayTeamFlag": "🇸🇪",
       "kickoffUtc": "2026-06-30T21:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minutePlayed": 2700,
       "round": "Round of 32",
       "groupName": null
     },
