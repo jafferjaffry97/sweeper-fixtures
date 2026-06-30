@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-29T22:55:45.758Z",
+  "lastUpdated": "2026-06-30T00:03:51.280Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1195,10 +1195,10 @@
       "awayTeamName": "Paraguay",
       "awayTeamFlag": "🇵🇾",
       "kickoffUtc": "2026-06-29T20:30Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 1,
       "awayScore": 1,
-      "minutePlayed": 6300,
+      "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null
     },
@@ -1428,9 +1428,9 @@
     },
     {
       "id": "760503",
-      "homeTeamId": "RD32",
-      "homeTeamName": "Round of 32 2 Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "PAR",
+      "homeTeamName": "Paraguay",
+      "homeTeamFlag": "🇵🇾",
       "awayTeamId": "RD32",
       "awayTeamName": "Round of 32 5 Winner",
       "awayTeamFlag": "🏳️",
