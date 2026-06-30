@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30T18:18:51.421Z",
+  "lastUpdated": "2026-06-30T20:28:48.577Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1227,10 +1227,10 @@
       "awayTeamName": "Norway",
       "awayTeamFlag": "🇳🇴",
       "kickoffUtc": "2026-06-30T17:00Z",
-      "status": "live",
-      "homeScore": 0,
-      "awayScore": 1,
-      "minutePlayed": 3480,
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 2,
+      "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null
     },
@@ -1447,9 +1447,9 @@
       "homeTeamId": "BRA",
       "homeTeamName": "Brazil",
       "homeTeamFlag": "🇧🇷",
-      "awayTeamId": "RD32",
-      "awayTeamName": "Round of 32 6 Winner",
-      "awayTeamFlag": "🏳️",
+      "awayTeamId": "NOR",
+      "awayTeamName": "Norway",
+      "awayTeamFlag": "🇳🇴",
       "kickoffUtc": "2026-07-05T20:00Z",
       "status": "scheduled",
       "homeScore": null,
@@ -1668,6 +1668,7 @@
     }
   ],
   "eliminatedTeamIds": [
+    "CIV",
     "JPN",
     "RSA"
   ]
