@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T21:59:42.268Z",
+  "lastUpdated": "2026-07-01T23:23:48.814Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1291,10 +1291,10 @@
       "awayTeamName": "Senegal",
       "awayTeamFlag": "🇸🇳",
       "kickoffUtc": "2026-07-01T20:00Z",
-      "status": "live",
-      "homeScore": 2,
+      "status": "finished",
+      "homeScore": 3,
       "awayScore": 2,
-      "minutePlayed": 5400,
+      "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null
     },
@@ -1495,9 +1495,9 @@
       "homeTeamId": "RD32",
       "homeTeamName": "Round of 32 9 Winner",
       "homeTeamFlag": "🏳️",
-      "awayTeamId": "RD32",
-      "awayTeamName": "Round of 32 10 Winner",
-      "awayTeamFlag": "🏳️",
+      "awayTeamId": "BEL",
+      "awayTeamName": "Belgium",
+      "awayTeamFlag": "🇧🇪",
       "kickoffUtc": "2026-07-07T00:00Z",
       "status": "scheduled",
       "homeScore": null,
@@ -1673,6 +1673,7 @@
     "ECU",
     "JPN",
     "RSA",
+    "SEN",
     "SWE"
   ]
 }
