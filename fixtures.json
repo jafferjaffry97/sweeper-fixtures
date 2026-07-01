@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T20:23:31.707Z",
+  "lastUpdated": "2026-07-01T21:59:42.268Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1292,9 +1292,9 @@
       "awayTeamFlag": "🇸🇳",
       "kickoffUtc": "2026-07-01T20:00Z",
       "status": "live",
-      "homeScore": 0,
-      "awayScore": 0,
-      "minutePlayed": 1380,
+      "homeScore": 2,
+      "awayScore": 2,
+      "minutePlayed": 5400,
       "round": "Round of 32",
       "groupName": null
     },
