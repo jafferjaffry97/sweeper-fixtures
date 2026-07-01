@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T01:39:37.004Z",
+  "lastUpdated": "2026-07-01T06:25:19.153Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1259,9 +1259,9 @@
       "awayTeamName": "Ecuador",
       "awayTeamFlag": "🇪🇨",
       "kickoffUtc": "2026-07-01T02:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 0,
       "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null
@@ -1460,9 +1460,9 @@
     },
     {
       "id": "760505",
-      "homeTeamId": "RD32",
-      "homeTeamName": "Round of 32 7 Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "MEX",
+      "homeTeamName": "Mexico",
+      "homeTeamFlag": "🇲🇽",
       "awayTeamId": "RD32",
       "awayTeamName": "Round of 32 8 Winner",
       "awayTeamFlag": "🏳️",
@@ -1669,6 +1669,7 @@
   ],
   "eliminatedTeamIds": [
     "CIV",
+    "ECU",
     "JPN",
     "RSA",
     "SWE"
