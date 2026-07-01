@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T16:04:50.522Z",
+  "lastUpdated": "2026-07-01T18:24:30.745Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1275,10 +1275,10 @@
       "awayTeamName": "Congo DR",
       "awayTeamFlag": "🇨🇩",
       "kickoffUtc": "2026-07-01T16:00Z",
-      "status": "live",
-      "homeScore": 0,
-      "awayScore": 0,
-      "minutePlayed": 240,
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 1,
+      "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null
     },
@@ -1463,9 +1463,9 @@
       "homeTeamId": "MEX",
       "homeTeamName": "Mexico",
       "homeTeamFlag": "🇲🇽",
-      "awayTeamId": "RD32",
-      "awayTeamName": "Round of 32 8 Winner",
-      "awayTeamFlag": "🏳️",
+      "awayTeamId": "ENG",
+      "awayTeamName": "England",
+      "awayTeamFlag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "kickoffUtc": "2026-07-06T00:00Z",
       "status": "scheduled",
       "homeScore": null,
@@ -1669,6 +1669,7 @@
   ],
   "eliminatedTeamIds": [
     "CIV",
+    "COD",
     "ECU",
     "JPN",
     "RSA",
