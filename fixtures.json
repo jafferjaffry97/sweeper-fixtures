@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T18:13:04.247Z",
+  "lastUpdated": "2026-07-02T20:01:16.953Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1323,10 +1323,10 @@
       "awayTeamName": "Austria",
       "awayTeamFlag": "🇦🇹",
       "kickoffUtc": "2026-07-02T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minutePlayed": 2700,
       "round": "Round of 32",
       "groupName": null
     },
