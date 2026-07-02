@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T23:23:48.814Z",
+  "lastUpdated": "2026-07-02T01:31:48.746Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1307,10 +1307,10 @@
       "awayTeamName": "Bosnia & Herzegovina",
       "awayTeamFlag": "🇧🇦",
       "kickoffUtc": "2026-07-02T00:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minutePlayed": 3900,
       "round": "Round of 32",
       "groupName": null
     },
