@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T21:43:51.003Z",
+  "lastUpdated": "2026-07-02T23:04:08.063Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1339,10 +1339,10 @@
       "awayTeamName": "Croatia",
       "awayTeamFlag": "🇭🇷",
       "kickoffUtc": "2026-07-02T23:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 240,
       "round": "Round of 32",
       "groupName": null
     },
