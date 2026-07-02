@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T20:01:16.953Z",
+  "lastUpdated": "2026-07-02T21:43:51.003Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1323,10 +1323,10 @@
       "awayTeamName": "Austria",
       "awayTeamFlag": "🇦🇹",
       "kickoffUtc": "2026-07-02T19:00Z",
-      "status": "live",
-      "homeScore": 1,
+      "status": "finished",
+      "homeScore": 3,
       "awayScore": 0,
-      "minutePlayed": 2700,
+      "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null
     },
@@ -1479,9 +1479,9 @@
       "homeTeamId": "RD32",
       "homeTeamName": "Round of 32 11 Winner",
       "homeTeamFlag": "🏳️",
-      "awayTeamId": "RD32",
-      "awayTeamName": "Round of 32 12 Winner",
-      "awayTeamFlag": "🏳️",
+      "awayTeamId": "ESP",
+      "awayTeamName": "Spain",
+      "awayTeamFlag": "🇪🇸",
       "kickoffUtc": "2026-07-06T19:00Z",
       "status": "scheduled",
       "homeScore": null,
@@ -1668,6 +1668,7 @@
     }
   ],
   "eliminatedTeamIds": [
+    "AUT",
     "BIH",
     "CIV",
     "COD",
