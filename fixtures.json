@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T01:31:48.746Z",
+  "lastUpdated": "2026-07-02T05:58:08.741Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1307,10 +1307,10 @@
       "awayTeamName": "Bosnia & Herzegovina",
       "awayTeamFlag": "🇧🇦",
       "kickoffUtc": "2026-07-02T00:00Z",
-      "status": "live",
-      "homeScore": 1,
+      "status": "finished",
+      "homeScore": 2,
       "awayScore": 0,
-      "minutePlayed": 3900,
+      "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null
     },
@@ -1492,9 +1492,9 @@
     },
     {
       "id": "760507",
-      "homeTeamId": "RD32",
-      "homeTeamName": "Round of 32 9 Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "USA",
+      "homeTeamName": "USA",
+      "homeTeamFlag": "🇺🇸",
       "awayTeamId": "BEL",
       "awayTeamName": "Belgium",
       "awayTeamFlag": "🇧🇪",
@@ -1668,6 +1668,7 @@
     }
   ],
   "eliminatedTeamIds": [
+    "BIH",
     "CIV",
     "COD",
     "ECU",
