@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T01:09:33.636Z",
+  "lastUpdated": "2026-07-03T05:13:42.731Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1339,10 +1339,10 @@
       "awayTeamName": "Croatia",
       "awayTeamFlag": "🇭🇷",
       "kickoffUtc": "2026-07-02T23:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 2,
       "awayScore": 1,
-      "minutePlayed": 5400,
+      "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null
     },
@@ -1355,9 +1355,9 @@
       "awayTeamName": "Algeria",
       "awayTeamFlag": "🇩🇿",
       "kickoffUtc": "2026-07-03T03:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
+      "status": "finished",
+      "homeScore": 2,
+      "awayScore": 0,
       "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null
@@ -1476,9 +1476,9 @@
     },
     {
       "id": "760506",
-      "homeTeamId": "RD32",
-      "homeTeamName": "Round of 32 11 Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "POR",
+      "homeTeamName": "Portugal",
+      "homeTeamFlag": "🇵🇹",
       "awayTeamId": "ESP",
       "awayTeamName": "Spain",
       "awayTeamFlag": "🇪🇸",
@@ -1524,9 +1524,9 @@
     },
     {
       "id": "760508",
-      "homeTeamId": "RD32",
-      "homeTeamName": "Round of 32 13 Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "SUI",
+      "homeTeamName": "Switzerland",
+      "homeTeamFlag": "🇨🇭",
       "awayTeamId": "RD32",
       "awayTeamName": "Round of 32 15 Winner",
       "awayTeamFlag": "🏳️",
@@ -1668,10 +1668,12 @@
     }
   ],
   "eliminatedTeamIds": [
+    "ALG",
     "AUT",
     "BIH",
     "CIV",
     "COD",
+    "CRO",
     "ECU",
     "JPN",
     "RSA",
