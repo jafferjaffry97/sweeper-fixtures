@@ -4,7 +4,7 @@
 // Run: node scripts/fetch-fixtures.mjs
 // Schedule: GitHub Actions workflow_dispatch or cron
 
-import { writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -140,7 +140,7 @@ async function buildGroupMap() {
     try {
       const [groupData, eventsData] = await Promise.all([
         apiGet(`${CORE}/seasons/2026/types/1/groups/${g}`),
-        apiGet(`${CORE}/seasons/2026/types/1/groups/${g}/events?limit=10`),
+        apiGet(`${CORE}/seasons/2026/types/1/groups/${g}/events?limit=25`),
       ]);
       const name = groupData.name ?? `Group ${String.fromCharCode(64 + g)}`;
       for (const item of (eventsData.items ?? [])) {
@@ -199,6 +199,13 @@ function transformEvent(event, groupMap) {
 
   const homeScore = statusStr !== 'scheduled' ? (parseInt(home.score) ?? null) : null;
   const awayScore = statusStr !== 'scheduled' ? (parseInt(away.score) ?? null) : null;
+
+  // Penalty shootout scores (present only on matches decided on penalties).
+  // Used to resolve the knockout loser when the 90/120-minute score is level.
+  const homeShootout = Number.isFinite(parseInt(home.shootoutScore))
+    ? parseInt(home.shootoutScore) : null;
+  const awayShootout = Number.isFinite(parseInt(away.shootoutScore))
+    ? parseInt(away.shootoutScore) : null;
   const minute    = statusStr === 'live'
     ? (Math.floor(comp.status?.clock ?? 0) || null)
     : null;
@@ -221,6 +228,8 @@ function transformEvent(event, groupMap) {
     minutePlayed:  minute,
     round,
     groupName,
+    homeShootout,
+    awayShootout,
   };
 }
 
@@ -252,6 +261,11 @@ function computeEliminated(fixtures) {
     if (f.homeScore == null || f.awayScore == null) continue;
     if (f.homeScore < f.awayScore) out.add(f.homeTeamId);
     else if (f.awayScore < f.homeScore) out.add(f.awayTeamId);
+    else if (f.homeShootout != null && f.awayShootout != null &&
+             f.homeShootout !== f.awayShootout) {
+      // Level after extra time — decided on penalties.
+      out.add(f.homeShootout < f.awayShootout ? f.homeTeamId : f.awayTeamId);
+    }
   }
   return [...out].sort();
 }
@@ -306,6 +320,25 @@ async function main() {
   // Sort chronologically
   fixtures.sort((a, b) => a.kickoffUtc.localeCompare(b.kickoffUtc));
 
+  // Backfill groupName on group-stage fixtures the group map missed (ESPN's
+  // per-group events endpoint sometimes returns an incomplete list): every
+  // team's group is known from any of its already-labelled fixtures.
+  const teamGroup = {};
+  for (const f of fixtures) {
+    if (f.round === 'Group Stage' && f.groupName) {
+      teamGroup[f.homeTeamId] = f.groupName;
+      teamGroup[f.awayTeamId] = f.groupName;
+    }
+  }
+  let backfilled = 0;
+  for (const f of fixtures) {
+    if (f.round === 'Group Stage' && !f.groupName) {
+      const g = teamGroup[f.homeTeamId] ?? teamGroup[f.awayTeamId];
+      if (g) { f.groupName = g; backfilled++; }
+    }
+  }
+  if (backfilled) console.log(`  ✓ Backfilled groupName on ${backfilled} fixture(s)`);
+
   // Warn about any teams without flags in our registry
   const unknown = new Set(
     fixtures.flatMap(f => [f.homeTeamId, f.awayTeamId]).filter(t => !TEAMS[t])
@@ -314,11 +347,22 @@ async function main() {
     console.warn(`\n⚠  Unknown TLAs (add flags to TEAMS map): ${[...unknown].join(', ')}`);
   }
 
+  // Manual overrides in the existing file (edge cases the feed can't resolve,
+  // e.g. forfeits) must survive regeneration — union, never overwrite.
+  let manualEliminated = [];
+  try {
+    manualEliminated =
+      JSON.parse(readFileSync(OUTPUT, 'utf8')).eliminatedTeamIds ?? [];
+  } catch {/* first run / missing file */}
+
   const output = {
     lastUpdated:      new Date().toISOString(),
     currentStage:     currentStage(fixtures),
     fixtures,
-    eliminatedTeamIds: computeEliminated(fixtures),
+    eliminatedTeamIds: [...new Set([
+      ...manualEliminated,
+      ...computeEliminated(fixtures),
+    ])].sort(),
   };
 
   writeFileSync(OUTPUT, JSON.stringify(output, null, 2) + '\n');
