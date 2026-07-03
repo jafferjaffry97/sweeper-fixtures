@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T17:26:40.371Z",
+  "lastUpdated": "2026-07-03T18:46:58.822Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1541,10 +1541,10 @@
       "awayTeamName": "Egypt",
       "awayTeamFlag": "🇪🇬",
       "kickoffUtc": "2026-07-03T18:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minutePlayed": 2700,
       "round": "Round of 32",
       "groupName": null,
       "homeShootout": null,
