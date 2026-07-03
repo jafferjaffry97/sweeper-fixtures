@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T21:39:59.548Z",
+  "lastUpdated": "2026-07-03T23:01:20.733Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1559,10 +1559,10 @@
       "awayTeamName": "Cape Verde",
       "awayTeamFlag": "🇨🇻",
       "kickoffUtc": "2026-07-03T22:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 1,
+      "awayScore": 0,
+      "minutePlayed": 2700,
       "round": "Round of 32",
       "groupName": null,
       "homeShootout": null,
