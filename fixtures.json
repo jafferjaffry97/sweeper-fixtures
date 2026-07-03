@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T20:13:09.287Z",
+  "lastUpdated": "2026-07-03T21:39:59.548Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1541,14 +1541,14 @@
       "awayTeamName": "Egypt",
       "awayTeamFlag": "🇪🇬",
       "kickoffUtc": "2026-07-03T18:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 1,
       "awayScore": 1,
-      "minutePlayed": 6000,
+      "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null,
-      "homeShootout": null,
-      "awayShootout": null
+      "homeShootout": 2,
+      "awayShootout": 4
     },
     {
       "id": "760500",
@@ -1699,9 +1699,9 @@
       "homeTeamId": "RD32",
       "homeTeamName": "Round of 32 14 Winner",
       "homeTeamFlag": "🏳️",
-      "awayTeamId": "RD32",
-      "awayTeamName": "Round of 32 16 Winner",
-      "awayTeamFlag": "🏳️",
+      "awayTeamId": "EGY",
+      "awayTeamName": "Egypt",
+      "awayTeamFlag": "🇪🇬",
       "kickoffUtc": "2026-07-07T16:00Z",
       "status": "scheduled",
       "homeScore": null,
@@ -1877,6 +1877,7 @@
   ],
   "eliminatedTeamIds": [
     "ALG",
+    "AUS",
     "AUT",
     "BIH",
     "CIV",
