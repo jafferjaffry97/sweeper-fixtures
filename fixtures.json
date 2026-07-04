@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-04T15:41:07.726Z",
-  "currentStage": "Round of 32",
+  "lastUpdated": "2026-07-04T17:02:41.942Z",
+  "currentStage": "Round of 16",
   "fixtures": [
     {
       "id": "760415",
@@ -1595,10 +1595,10 @@
       "awayTeamName": "Morocco",
       "awayTeamFlag": "🇲🇦",
       "kickoffUtc": "2026-07-04T17:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 60,
       "round": "Round of 16",
       "groupName": null,
       "homeShootout": null,
