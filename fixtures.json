@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-04T22:29:03.556Z",
+  "lastUpdated": "2026-07-04T23:34:06.763Z",
   "currentStage": "Round of 16",
   "fixtures": [
     {
@@ -1613,10 +1613,10 @@
       "awayTeamName": "France",
       "awayTeamFlag": "🇫🇷",
       "kickoffUtc": "2026-07-04T21:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
-      "awayScore": 0,
-      "minutePlayed": 3840,
+      "awayScore": 1,
+      "minutePlayed": null,
       "round": "Round of 16",
       "groupName": null,
       "homeShootout": null,
@@ -1732,9 +1732,9 @@
     },
     {
       "id": "760510",
-      "homeTeamId": "RD16 W1",
-      "homeTeamName": "Round of 16 1 Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "FRA",
+      "homeTeamName": "France",
+      "homeTeamFlag": "🇫🇷",
       "awayTeamId": "MAR",
       "awayTeamName": "Morocco",
       "awayTeamFlag": "🇲🇦",
@@ -1890,6 +1890,7 @@
     "GHA",
     "JPN",
     "NED",
+    "PAR",
     "RSA",
     "SEN",
     "SWE"
