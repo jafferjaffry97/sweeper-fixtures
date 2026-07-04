@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-04T17:02:41.942Z",
+  "lastUpdated": "2026-07-04T18:30:54.398Z",
   "currentStage": "Round of 16",
   "fixtures": [
     {
@@ -1597,8 +1597,8 @@
       "kickoffUtc": "2026-07-04T17:00Z",
       "status": "live",
       "homeScore": 0,
-      "awayScore": 0,
-      "minutePlayed": 60,
+      "awayScore": 1,
+      "minutePlayed": 4020,
       "round": "Round of 16",
       "groupName": null,
       "homeShootout": null,
