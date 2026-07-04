@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-04T20:08:02.196Z",
+  "lastUpdated": "2026-07-04T21:27:24.465Z",
   "currentStage": "Round of 16",
   "fixtures": [
     {
@@ -1613,10 +1613,10 @@
       "awayTeamName": "France",
       "awayTeamFlag": "🇫🇷",
       "kickoffUtc": "2026-07-04T21:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 1380,
       "round": "Round of 16",
       "groupName": null,
       "homeShootout": null,
