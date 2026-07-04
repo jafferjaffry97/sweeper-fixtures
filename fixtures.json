@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T23:01:20.733Z",
+  "lastUpdated": "2026-07-04T01:07:42.440Z",
   "currentStage": "Round of 32",
   "fixtures": [
     {
@@ -1559,10 +1559,10 @@
       "awayTeamName": "Cape Verde",
       "awayTeamFlag": "🇨🇻",
       "kickoffUtc": "2026-07-03T22:00Z",
-      "status": "live",
-      "homeScore": 1,
-      "awayScore": 0,
-      "minutePlayed": 2700,
+      "status": "finished",
+      "homeScore": 3,
+      "awayScore": 2,
+      "minutePlayed": null,
       "round": "Round of 32",
       "groupName": null,
       "homeShootout": null,
@@ -1696,9 +1696,9 @@
     },
     {
       "id": "760509",
-      "homeTeamId": "RD32",
-      "homeTeamName": "Round of 32 14 Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "ARG",
+      "homeTeamName": "Argentina",
+      "homeTeamFlag": "🇦🇷",
       "awayTeamId": "EGY",
       "awayTeamName": "Egypt",
       "awayTeamFlag": "🇪🇬",
@@ -1882,6 +1882,7 @@
     "BIH",
     "CIV",
     "COD",
+    "CPV",
     "CRO",
     "ECU",
     "GER",
