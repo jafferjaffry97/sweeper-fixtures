@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-05T22:00:08.279Z",
+  "lastUpdated": "2026-07-05T23:12:07.248Z",
   "currentStage": "Round of 16",
   "fixtures": [
     {
@@ -1631,10 +1631,10 @@
       "awayTeamName": "Norway",
       "awayTeamFlag": "🇳🇴",
       "kickoffUtc": "2026-07-05T20:00Z",
-      "status": "live",
-      "homeScore": 0,
+      "status": "finished",
+      "homeScore": 1,
       "awayScore": 2,
-      "minutePlayed": 5400,
+      "minutePlayed": null,
       "round": "Round of 16",
       "groupName": null,
       "homeShootout": null,
@@ -1768,9 +1768,9 @@
     },
     {
       "id": "760512",
-      "homeTeamId": "RD16 W3",
-      "homeTeamName": "Round of 16 3 Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "NOR",
+      "homeTeamName": "Norway",
+      "homeTeamFlag": "🇳🇴",
       "awayTeamId": "RD16 W4",
       "awayTeamName": "Round of 16 4 Winner",
       "awayTeamFlag": "🏳️",
@@ -1880,6 +1880,7 @@
     "AUS",
     "AUT",
     "BIH",
+    "BRA",
     "CAN",
     "CIV",
     "COD",
