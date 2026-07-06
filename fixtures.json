@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-05T23:12:07.248Z",
+  "lastUpdated": "2026-07-06T01:15:08.314Z",
   "currentStage": "Round of 16",
   "fixtures": [
     {
@@ -1648,11 +1648,11 @@
       "awayTeamId": "ENG",
       "awayTeamName": "England",
       "awayTeamFlag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
-      "kickoffUtc": "2026-07-06T00:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "kickoffUtc": "2026-07-06T01:00Z",
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 900,
       "round": "Round of 16",
       "groupName": null,
       "homeShootout": null,
