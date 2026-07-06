@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-06T19:15:10.378Z",
+  "lastUpdated": "2026-07-06T21:10:02.363Z",
   "currentStage": "Round of 16",
   "fixtures": [
     {
@@ -1667,10 +1667,10 @@
       "awayTeamName": "Spain",
       "awayTeamFlag": "🇪🇸",
       "kickoffUtc": "2026-07-06T19:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
-      "awayScore": 0,
-      "minutePlayed": 900,
+      "awayScore": 1,
+      "minutePlayed": null,
       "round": "Round of 16",
       "groupName": null,
       "homeShootout": null,
@@ -1750,9 +1750,9 @@
     },
     {
       "id": "760511",
-      "homeTeamId": "RD16 W5",
-      "homeTeamName": "Round of 16 5 Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "ESP",
+      "homeTeamName": "Spain",
+      "homeTeamFlag": "🇪🇸",
       "awayTeamId": "RD16 W6",
       "awayTeamName": "Round of 16 6 Winner",
       "awayTeamFlag": "🏳️",
@@ -1893,6 +1893,7 @@
     "MEX",
     "NED",
     "PAR",
+    "POR",
     "RSA",
     "SEN",
     "SWE"
