@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-06T22:45:30.540Z",
+  "lastUpdated": "2026-07-07T00:06:55.916Z",
   "currentStage": "Round of 16",
   "fixtures": [
     {
@@ -1685,10 +1685,10 @@
       "awayTeamName": "Belgium",
       "awayTeamFlag": "🇧🇪",
       "kickoffUtc": "2026-07-07T00:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 360,
       "round": "Round of 16",
       "groupName": null,
       "homeShootout": null,
