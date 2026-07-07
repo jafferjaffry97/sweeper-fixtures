@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T18:31:16.964Z",
+  "lastUpdated": "2026-07-07T20:48:38.187Z",
   "currentStage": "Round of 16",
   "fixtures": [
     {
@@ -1721,10 +1721,10 @@
       "awayTeamName": "Colombia",
       "awayTeamFlag": "🇨🇴",
       "kickoffUtc": "2026-07-07T20:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 2700,
       "round": "Round of 16",
       "groupName": null,
       "homeShootout": null,
