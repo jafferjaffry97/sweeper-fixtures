@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T22:09:54.712Z",
+  "lastUpdated": "2026-07-07T23:29:07.123Z",
   "currentStage": "Round of 16",
   "fixtures": [
     {
@@ -1721,14 +1721,14 @@
       "awayTeamName": "Colombia",
       "awayTeamFlag": "🇨🇴",
       "kickoffUtc": "2026-07-07T20:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
       "awayScore": 0,
-      "minutePlayed": 5940,
+      "minutePlayed": null,
       "round": "Round of 16",
       "groupName": null,
-      "homeShootout": null,
-      "awayShootout": null
+      "homeShootout": 4,
+      "awayShootout": 3
     },
     {
       "id": "760510",
@@ -1789,9 +1789,9 @@
       "homeTeamId": "ARG",
       "homeTeamName": "Argentina",
       "homeTeamFlag": "🇦🇷",
-      "awayTeamId": "RD16 W8",
-      "awayTeamName": "Round of 16 8 Winner",
-      "awayTeamFlag": "🏳️",
+      "awayTeamId": "SUI",
+      "awayTeamName": "Switzerland",
+      "awayTeamFlag": "🇨🇭",
       "kickoffUtc": "2026-07-12T01:00Z",
       "status": "scheduled",
       "homeScore": null,
@@ -1884,6 +1884,7 @@
     "CAN",
     "CIV",
     "COD",
+    "COL",
     "CPV",
     "CRO",
     "ECU",
