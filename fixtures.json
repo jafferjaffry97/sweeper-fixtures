@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T00:06:55.916Z",
+  "lastUpdated": "2026-07-07T04:32:27.258Z",
   "currentStage": "Round of 16",
   "fixtures": [
     {
@@ -1685,10 +1685,10 @@
       "awayTeamName": "Belgium",
       "awayTeamFlag": "🇧🇪",
       "kickoffUtc": "2026-07-07T00:00Z",
-      "status": "live",
-      "homeScore": 0,
-      "awayScore": 0,
-      "minutePlayed": 360,
+      "status": "finished",
+      "homeScore": 1,
+      "awayScore": 4,
+      "minutePlayed": null,
       "round": "Round of 16",
       "groupName": null,
       "homeShootout": null,
@@ -1753,9 +1753,9 @@
       "homeTeamId": "ESP",
       "homeTeamName": "Spain",
       "homeTeamFlag": "🇪🇸",
-      "awayTeamId": "RD16 W6",
-      "awayTeamName": "Round of 16 6 Winner",
-      "awayTeamFlag": "🏳️",
+      "awayTeamId": "BEL",
+      "awayTeamName": "Belgium",
+      "awayTeamFlag": "🇧🇪",
       "kickoffUtc": "2026-07-10T19:00Z",
       "status": "scheduled",
       "homeScore": null,
@@ -1896,6 +1896,7 @@
     "POR",
     "RSA",
     "SEN",
-    "SWE"
+    "SWE",
+    "USA"
   ]
 }
