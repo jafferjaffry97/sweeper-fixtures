@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-09T21:03:01.501Z",
+  "lastUpdated": "2026-07-09T22:49:24.091Z",
   "currentStage": "Quarter-Finals",
   "fixtures": [
     {
@@ -1739,10 +1739,10 @@
       "awayTeamName": "Morocco",
       "awayTeamFlag": "🇲🇦",
       "kickoffUtc": "2026-07-09T20:00Z",
-      "status": "live",
-      "homeScore": 0,
+      "status": "finished",
+      "homeScore": 2,
       "awayScore": 0,
-      "minutePlayed": 2700,
+      "minutePlayed": null,
       "round": "Quarter-Finals",
       "groupName": null,
       "homeShootout": null,
@@ -1804,9 +1804,9 @@
     },
     {
       "id": "760514",
-      "homeTeamId": "QFW1",
-      "homeTeamName": "Quarterfinal 1 Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "FRA",
+      "homeTeamName": "France",
+      "homeTeamFlag": "🇫🇷",
       "awayTeamId": "QFW2",
       "awayTeamName": "Quarterfinal 2 Winner",
       "awayTeamFlag": "🏳️",
@@ -1892,6 +1892,7 @@
     "GER",
     "GHA",
     "JPN",
+    "MAR",
     "MEX",
     "NED",
     "PAR",
