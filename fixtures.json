@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T19:24:27.479Z",
+  "lastUpdated": "2026-07-10T20:49:03.120Z",
   "currentStage": "Quarter-Finals",
   "fixtures": [
     {
@@ -1758,9 +1758,9 @@
       "awayTeamFlag": "🇧🇪",
       "kickoffUtc": "2026-07-10T19:00Z",
       "status": "live",
-      "homeScore": 0,
-      "awayScore": 0,
-      "minutePlayed": 1380,
+      "homeScore": 1,
+      "awayScore": 1,
+      "minutePlayed": 5220,
       "round": "Quarter-Finals",
       "groupName": null,
       "homeShootout": null,
