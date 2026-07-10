@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T17:47:09.622Z",
+  "lastUpdated": "2026-07-10T19:24:27.479Z",
   "currentStage": "Quarter-Finals",
   "fixtures": [
     {
@@ -1757,10 +1757,10 @@
       "awayTeamName": "Belgium",
       "awayTeamFlag": "🇧🇪",
       "kickoffUtc": "2026-07-10T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 1380,
       "round": "Quarter-Finals",
       "groupName": null,
       "homeShootout": null,
