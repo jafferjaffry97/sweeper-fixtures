@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-11T20:09:04.087Z",
+  "lastUpdated": "2026-07-11T21:22:00.620Z",
   "currentStage": "Quarter-Finals",
   "fixtures": [
     {
@@ -1775,10 +1775,10 @@
       "awayTeamName": "England",
       "awayTeamFlag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "kickoffUtc": "2026-07-11T21:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 1260,
       "round": "Quarter-Finals",
       "groupName": null,
       "homeShootout": null,
