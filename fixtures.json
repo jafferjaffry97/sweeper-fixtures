@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14T20:08:59.444Z",
+  "lastUpdated": "2026-07-14T21:30:11.359Z",
   "currentStage": "Semi-Finals",
   "fixtures": [
     {
@@ -1811,10 +1811,10 @@
       "awayTeamName": "Spain",
       "awayTeamFlag": "🇪🇸",
       "kickoffUtc": "2026-07-14T19:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 0,
-      "awayScore": 1,
-      "minutePlayed": 2820,
+      "awayScore": 2,
+      "minutePlayed": null,
       "round": "Semi-Finals",
       "groupName": null,
       "homeShootout": null,
@@ -1890,6 +1890,7 @@
     "CRO",
     "ECU",
     "EGY",
+    "FRA",
     "GER",
     "GHA",
     "JPN",
