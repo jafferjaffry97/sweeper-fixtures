@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-14T21:30:11.359Z",
+  "lastUpdated": "2026-07-14T22:33:52.050Z",
   "currentStage": "Semi-Finals",
   "fixtures": [
     {
@@ -1840,9 +1840,9 @@
     },
     {
       "id": "760516",
-      "homeTeamId": "SF L1",
-      "homeTeamName": "Semifinal 1 Loser",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "FRA",
+      "homeTeamName": "France",
+      "homeTeamFlag": "🇫🇷",
       "awayTeamId": "SF L2",
       "awayTeamName": "Semifinal 2 Loser",
       "awayTeamFlag": "🏳️",
@@ -1852,15 +1852,15 @@
       "awayScore": null,
       "minutePlayed": null,
       "round": "Group Stage",
-      "groupName": null,
+      "groupName": "Group I",
       "homeShootout": null,
       "awayShootout": null
     },
     {
       "id": "760517",
-      "homeTeamId": "SFW1",
-      "homeTeamName": "Semifinal 1 Winner",
-      "homeTeamFlag": "🏳️",
+      "homeTeamId": "ESP",
+      "homeTeamName": "Spain",
+      "homeTeamFlag": "🇪🇸",
       "awayTeamId": "SFW2",
       "awayTeamName": "Semifinal 2 Winner",
       "awayTeamFlag": "🏳️",
