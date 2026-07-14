@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-14T18:38:19.443Z",
-  "currentStage": "Quarter-Finals",
+  "lastUpdated": "2026-07-14T20:08:59.444Z",
+  "currentStage": "Semi-Finals",
   "fixtures": [
     {
       "id": "760415",
@@ -1811,10 +1811,10 @@
       "awayTeamName": "Spain",
       "awayTeamFlag": "🇪🇸",
       "kickoffUtc": "2026-07-14T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 1,
+      "minutePlayed": 2820,
       "round": "Semi-Finals",
       "groupName": null,
       "homeShootout": null,
