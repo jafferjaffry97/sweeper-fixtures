@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T17:46:21.576Z",
+  "lastUpdated": "2026-07-15T19:07:37.212Z",
   "currentStage": "Semi-Finals",
   "fixtures": [
     {
@@ -1829,10 +1829,10 @@
       "awayTeamName": "Argentina",
       "awayTeamFlag": "🇦🇷",
       "kickoffUtc": "2026-07-15T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 420,
       "round": "Semi-Finals",
       "groupName": null,
       "homeShootout": null,
