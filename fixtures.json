@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-18T20:12:04.279Z",
+  "lastUpdated": "2026-07-18T21:22:20.877Z",
   "currentStage": "Semi-Finals",
   "fixtures": [
     {
@@ -1847,10 +1847,10 @@
       "awayTeamName": "England",
       "awayTeamFlag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "kickoffUtc": "2026-07-18T21:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 2,
+      "minutePlayed": 1260,
       "round": "Group Stage",
       "groupName": "Group I",
       "homeShootout": null,
