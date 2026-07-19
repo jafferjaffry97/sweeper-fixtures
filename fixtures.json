@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-19T21:50:16.197Z",
+  "lastUpdated": "2026-07-19T22:49:44.324Z",
   "currentStage": "Final",
   "fixtures": [
     {
@@ -1865,10 +1865,10 @@
       "awayTeamName": "Argentina",
       "awayTeamFlag": "🇦🇷",
       "kickoffUtc": "2026-07-19T19:00Z",
-      "status": "live",
+      "status": "finished",
       "homeScore": 1,
       "awayScore": 0,
-      "minutePlayed": 6840,
+      "minutePlayed": null,
       "round": "Final",
       "groupName": null,
       "homeShootout": null,
@@ -1877,6 +1877,7 @@
   ],
   "eliminatedTeamIds": [
     "ALG",
+    "ARG",
     "AUS",
     "AUT",
     "BEL",
