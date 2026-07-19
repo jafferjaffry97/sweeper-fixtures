@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-19T19:39:58.508Z",
+  "lastUpdated": "2026-07-19T20:43:54.218Z",
   "currentStage": "Final",
   "fixtures": [
     {
@@ -1868,7 +1868,7 @@
       "status": "live",
       "homeScore": 0,
       "awayScore": 0,
-      "minutePlayed": 1980,
+      "minutePlayed": 3900,
       "round": "Final",
       "groupName": null,
       "homeShootout": null,
