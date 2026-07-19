@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-07-19T18:01:35.051Z",
-  "currentStage": "Semi-Finals",
+  "lastUpdated": "2026-07-19T19:39:58.508Z",
+  "currentStage": "Final",
   "fixtures": [
     {
       "id": "760415",
@@ -1865,10 +1865,10 @@
       "awayTeamName": "Argentina",
       "awayTeamFlag": "🇦🇷",
       "kickoffUtc": "2026-07-19T19:00Z",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null,
-      "minutePlayed": null,
+      "status": "live",
+      "homeScore": 0,
+      "awayScore": 0,
+      "minutePlayed": 1980,
       "round": "Final",
       "groupName": null,
       "homeShootout": null,
