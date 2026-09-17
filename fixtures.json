@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-17T12:41:25.819Z",
+  "lastUpdated": "2026-09-17T17:27:38.543Z",
   "currentStage": "Final",
   "fixtures": [
     {
@@ -160,7 +160,7 @@
       "awayScore": 1,
       "minutePlayed": null,
       "round": "Group Stage",
-      "groupName": "Group E",
+      "groupName": null,
       "homeShootout": null,
       "awayShootout": null
     },
@@ -196,7 +196,7 @@
       "awayScore": 0,
       "minutePlayed": null,
       "round": "Group Stage",
-      "groupName": "Group E",
+      "groupName": null,
       "homeShootout": null,
       "awayShootout": null
     },
@@ -610,7 +610,7 @@
       "awayScore": 1,
       "minutePlayed": null,
       "round": "Group Stage",
-      "groupName": "Group E",
+      "groupName": null,
       "homeShootout": null,
       "awayShootout": null
     },
@@ -628,7 +628,7 @@
       "awayScore": 0,
       "minutePlayed": null,
       "round": "Group Stage",
-      "groupName": "Group E",
+      "groupName": null,
       "homeShootout": null,
       "awayShootout": null
     },
@@ -988,7 +988,7 @@
       "awayScore": 2,
       "minutePlayed": null,
       "round": "Group Stage",
-      "groupName": "Group E",
+      "groupName": null,
       "homeShootout": null,
       "awayShootout": null
     },
@@ -1006,7 +1006,7 @@
       "awayScore": 1,
       "minutePlayed": null,
       "round": "Group Stage",
-      "groupName": "Group E",
+      "groupName": null,
       "homeShootout": null,
       "awayShootout": null
     },
