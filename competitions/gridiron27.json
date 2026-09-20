@@ -1,0 +1,36 @@
+{
+  "id": "gridiron27",
+  "name": "Pro Gridiron Playoffs 2026/27",
+  "output": "feeds/gridiron27.json",
+  "espn": {
+    "site": "football/nfl",
+    "core": "football/leagues/nfl",
+    "season": 2026
+  },
+  "window": { "from": "2027-01-09", "to": "2027-02-15" },
+  "groupMap": null,
+  "rounds": {
+    "wild-card": "Wild Card",
+    "divisional-round": "Divisional Round",
+    "conference-championship": "Conference Championship",
+    "super-bowl": "Final"
+  },
+  "defaultRound": "Wild Card",
+  "stagePriority": [
+    "Final",
+    "Conference Championship",
+    "Divisional Round",
+    "Wild Card"
+  ],
+  "multiMatchRounds": [],
+  "format": {
+    "knockoutRounds": [
+      "Wild Card",
+      "Divisional Round",
+      "Conference Championship",
+      "Final"
+    ],
+    "resolver": "single"
+  },
+  "badges": "initials"
+}

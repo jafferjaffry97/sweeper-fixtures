@@ -1,0 +1,44 @@
+{
+  "id": "wc26",
+  "name": "International Tournament 2026",
+  "output": "fixtures.json",
+  "espn": {
+    "site": "soccer/fifa.world",
+    "core": "soccer/leagues/fifa.world",
+    "season": 2026
+  },
+  "window": { "from": "2026-06-11", "to": "2026-07-19" },
+  "groupMap": { "seasonType": 1, "groups": 12 },
+  "rounds": {
+    "group-stage": "Group Stage",
+    "round-of-32": "Round of 32",
+    "round-of-16": "Round of 16",
+    "quarterfinals": "Quarter-Finals",
+    "semifinals": "Semi-Finals",
+    "3rd-place": "Third Place",
+    "final": "Final"
+  },
+  "defaultRound": "Group Stage",
+  "stagePriority": [
+    "Final",
+    "Third Place",
+    "Semi-Finals",
+    "Quarter-Finals",
+    "Round of 16",
+    "Round of 32",
+    "Group Stage"
+  ],
+  "multiMatchRounds": [],
+  "format": {
+    "knockoutRounds": [
+      "Round of 32",
+      "Round of 16",
+      "Quarter-Finals",
+      "Semi-Finals",
+      "Third Place",
+      "Final"
+    ],
+    "resolver": "single"
+  },
+  "badges": "flags"
+}
