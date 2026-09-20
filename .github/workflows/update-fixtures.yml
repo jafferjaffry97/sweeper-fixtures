@@ -1,12 +1,28 @@
-name: Update Fixtures
+name: Update Feeds
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # every 30 minutes during the tournament
-  workflow_dispatch:         # manual run from the Actions tab
+    # Every 30 minutes. Competitions outside their season window make zero
+    # requests and exit immediately, so off-season runs are almost free.
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+    inputs:
+      competition:
+        description: 'Single competition id to rebuild (blank = all)'
+        required: false
+        default: ''
+      full:
+        description: 'Rebuild the whole season window instead of incrementally'
+        type: boolean
+        required: false
+        default: false
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-feeds
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -19,17 +35,37 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Fetch latest fixtures from ESPN
-        run: node scripts/fetch-fixtures.mjs
+      - name: Build feeds
+        env:
+          ONLY: ${{ github.event.inputs.competition }}
+          FULL: ${{ github.event.inputs.full }}
+        run: |
+          set -euo pipefail
+          flag=""
+          if [ "${FULL:-false}" = "true" ]; then flag="--full"; fi
 
-      - name: Commit and push if fixtures changed
+          if [ -n "${ONLY:-}" ]; then
+            ids="$ONLY"
+          else
+            ids=$(ls competitions/*.json | xargs -n1 basename | sed 's/\.json$//')
+          fi
+
+          for id in $ids; do
+            echo "::group::$id"
+            # One competition failing (an ESPN outage, a changed slug) must not
+            # stop the others from updating.
+            node scripts/fetch-competition.mjs "$id" $flag || echo "::warning::$id failed"
+            echo "::endgroup::"
+          done
+
+      - name: Commit and push if anything changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add fixtures.json
+          git add fixtures.json feeds/
           if git diff --staged --quiet; then
-            echo "fixtures.json unchanged — nothing to commit"
+            echo "no feed changes — nothing to commit"
           else
-            git commit -m "chore: update fixtures $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            git commit -m "chore: update feeds $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
             git push
           fi

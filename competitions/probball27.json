@@ -1,0 +1,42 @@
+{
+  "id": "probball27",
+  "name": "Pro Basketball Playoffs 2027",
+  "output": "feeds/probball27.json",
+  "espn": {
+    "site": "basketball/nba",
+    "core": "basketball/leagues/nba",
+    "season": 2027
+  },
+  "window": { "from": "2027-04-17", "to": "2027-06-25" },
+  "groupMap": null,
+  "rounds": {
+    "1": "First Round",
+    "2": "Conference Semifinals",
+    "3": "Conference Finals",
+    "4": "Finals"
+  },
+  "defaultRound": "First Round",
+  "stagePriority": [
+    "Finals",
+    "Conference Finals",
+    "Conference Semifinals",
+    "First Round"
+  ],
+  "multiMatchRounds": [
+    "First Round",
+    "Conference Semifinals",
+    "Conference Finals",
+    "Finals"
+  ],
+  "format": {
+    "knockoutRounds": [
+      "First Round",
+      "Conference Semifinals",
+      "Conference Finals",
+      "Finals"
+    ],
+    "resolver": "bestOf",
+    "winsNeeded": 4
+  },
+  "badges": "initials"
+}
