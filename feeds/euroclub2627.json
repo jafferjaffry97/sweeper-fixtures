@@ -1,7 +1,261 @@
 {
-  "lastUpdated": "2026-09-28T22:23:37.393Z",
+  "lastUpdated": "2026-09-29T02:09:16.963Z",
   "currentStage": "League Phase",
-  "fixtures": [],
+  "fixtures": [
+    {
+      "id": "401915418",
+      "homeTeamId": "RCL",
+      "homeTeamName": "Lens",
+      "homeTeamFlag": "LE",
+      "awayTeamId": "SCP",
+      "awayTeamName": "Sporting CP",
+      "awayTeamFlag": "SC",
+      "kickoffUtc": "2026-10-13T16:45Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915436",
+      "homeTeamId": "SAB",
+      "homeTeamName": "Sabah FK",
+      "homeTeamFlag": "SF",
+      "awayTeamId": "SLP",
+      "awayTeamName": "Slavia Prague",
+      "awayTeamFlag": "SP",
+      "kickoffUtc": "2026-10-13T16:45Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915417",
+      "homeTeamId": "ARS",
+      "homeTeamName": "Arsenal",
+      "homeTeamFlag": "AR",
+      "awayTeamId": "LILL",
+      "awayTeamName": "Lille",
+      "awayTeamFlag": "LI",
+      "kickoffUtc": "2026-10-13T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915412",
+      "homeTeamId": "ATM",
+      "homeTeamName": "Atlético Madrid",
+      "homeTeamFlag": "AM",
+      "awayTeamId": "MAN",
+      "awayTeamName": "Manchester United",
+      "awayTeamFlag": "MU",
+      "kickoffUtc": "2026-10-13T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915435",
+      "homeTeamId": "GAL",
+      "homeTeamName": "Galatasaray",
+      "homeTeamFlag": "GA",
+      "awayTeamId": "BAR",
+      "awayTeamName": "Barcelona",
+      "awayTeamFlag": "BA",
+      "kickoffUtc": "2026-10-13T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915413",
+      "homeTeamId": "INT",
+      "homeTeamName": "Internazionale",
+      "homeTeamFlag": "IN",
+      "awayTeamId": "BRU",
+      "awayTeamName": "Club Brugge",
+      "awayTeamFlag": "CB",
+      "kickoffUtc": "2026-10-13T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915434",
+      "homeTeamId": "RBL",
+      "homeTeamName": "RB Leipzig",
+      "homeTeamFlag": "RL",
+      "awayTeamId": "PSV",
+      "awayTeamName": "PSV Eindhoven",
+      "awayTeamFlag": "PE",
+      "kickoffUtc": "2026-10-13T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915411",
+      "homeTeamId": "VIK",
+      "homeTeamName": "Viking FK",
+      "homeTeamFlag": "VF",
+      "awayTeamId": "MUN",
+      "awayTeamName": "Bayern Munich",
+      "awayTeamFlag": "BM",
+      "kickoffUtc": "2026-10-13T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915410",
+      "homeTeamId": "VIL",
+      "homeTeamName": "Villarreal",
+      "homeTeamFlag": "VI",
+      "awayTeamId": "NAP",
+      "awayTeamName": "Napoli",
+      "awayTeamFlag": "NA",
+      "kickoffUtc": "2026-10-13T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    }
+  ],
   "eliminatedTeamIds": [],
-  "teams": []
+  "teams": [
+    {
+      "id": "ARS",
+      "name": "Arsenal",
+      "badge": "AR"
+    },
+    {
+      "id": "ATM",
+      "name": "Atlético Madrid",
+      "badge": "AM"
+    },
+    {
+      "id": "BAR",
+      "name": "Barcelona",
+      "badge": "BA"
+    },
+    {
+      "id": "BRU",
+      "name": "Club Brugge",
+      "badge": "CB"
+    },
+    {
+      "id": "GAL",
+      "name": "Galatasaray",
+      "badge": "GA"
+    },
+    {
+      "id": "INT",
+      "name": "Internazionale",
+      "badge": "IN"
+    },
+    {
+      "id": "LILL",
+      "name": "Lille",
+      "badge": "LI"
+    },
+    {
+      "id": "MAN",
+      "name": "Manchester United",
+      "badge": "MU"
+    },
+    {
+      "id": "MUN",
+      "name": "Bayern Munich",
+      "badge": "BM"
+    },
+    {
+      "id": "NAP",
+      "name": "Napoli",
+      "badge": "NA"
+    },
+    {
+      "id": "PSV",
+      "name": "PSV Eindhoven",
+      "badge": "PE"
+    },
+    {
+      "id": "RBL",
+      "name": "RB Leipzig",
+      "badge": "RL"
+    },
+    {
+      "id": "RCL",
+      "name": "Lens",
+      "badge": "LE"
+    },
+    {
+      "id": "SAB",
+      "name": "Sabah FK",
+      "badge": "SF"
+    },
+    {
+      "id": "SCP",
+      "name": "Sporting CP",
+      "badge": "SC"
+    },
+    {
+      "id": "SLP",
+      "name": "Slavia Prague",
+      "badge": "SP"
+    },
+    {
+      "id": "VIK",
+      "name": "Viking FK",
+      "badge": "VF"
+    },
+    {
+      "id": "VIL",
+      "name": "Villarreal",
+      "badge": "VI"
+    }
+  ]
 }
