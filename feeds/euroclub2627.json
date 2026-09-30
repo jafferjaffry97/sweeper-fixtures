@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29T23:51:49.000Z",
+  "lastUpdated": "2026-09-30T04:00:39.358Z",
   "currentStage": "League Phase",
   "fixtures": [
     {
@@ -163,10 +163,177 @@
       "groupName": null,
       "homeShootout": null,
       "awayShootout": null
+    },
+    {
+      "id": "401915416",
+      "homeTeamId": "FEY",
+      "homeTeamName": "Feyenoord Rotterdam",
+      "homeTeamFlag": "FR",
+      "awayTeamId": "COMO",
+      "awayTeamName": "Como",
+      "awayTeamFlag": "CO",
+      "kickoffUtc": "2026-10-14T16:45Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915415",
+      "homeTeamId": "LAS",
+      "homeTeamName": "LASK Linz",
+      "homeTeamFlag": "LL",
+      "awayTeamId": "LIV",
+      "awayTeamName": "Liverpool",
+      "awayTeamFlag": "LI",
+      "kickoffUtc": "2026-10-14T16:45Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915414",
+      "homeTeamId": "ROMA",
+      "homeTeamName": "AS Roma",
+      "homeTeamFlag": "AR",
+      "awayTeamId": "RMA",
+      "awayTeamName": "Real Madrid",
+      "awayTeamFlag": "RM",
+      "kickoffUtc": "2026-10-14T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915409",
+      "homeTeamId": "AVL",
+      "homeTeamName": "Aston Villa",
+      "homeTeamFlag": "AV",
+      "awayTeamId": "FEN",
+      "awayTeamName": "Fenerbahce",
+      "awayTeamFlag": "FE",
+      "kickoffUtc": "2026-10-14T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915393",
+      "homeTeamId": "BODO",
+      "homeTeamName": "Bodo/Glimt",
+      "homeTeamFlag": "BO",
+      "awayTeamId": "DOR",
+      "awayTeamName": "Borussia Dortmund",
+      "awayTeamFlag": "BD",
+      "kickoffUtc": "2026-10-14T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915407",
+      "homeTeamId": "MNC",
+      "homeTeamName": "Manchester City",
+      "homeTeamFlag": "MC",
+      "awayTeamId": "PSG",
+      "awayTeamName": "Paris Saint-Germain",
+      "awayTeamFlag": "PS",
+      "kickoffUtc": "2026-10-14T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915408",
+      "homeTeamId": "BET",
+      "homeTeamName": "Real Betis",
+      "homeTeamFlag": "RB",
+      "awayTeamId": "FCP",
+      "awayTeamName": "FC Porto",
+      "awayTeamFlag": "FP",
+      "kickoffUtc": "2026-10-14T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915406",
+      "homeTeamId": "SHK",
+      "homeTeamName": "Shakhtar Donetsk",
+      "homeTeamFlag": "SD",
+      "awayTeamId": "AEK",
+      "awayTeamName": "AEK Athens",
+      "awayTeamFlag": "AA",
+      "kickoffUtc": "2026-10-14T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
+    },
+    {
+      "id": "401915405",
+      "homeTeamId": "SLB",
+      "homeTeamName": "Slovan Bratislava",
+      "homeTeamFlag": "SB",
+      "awayTeamId": "VFB",
+      "awayTeamName": "VfB Stuttgart",
+      "awayTeamFlag": "VS",
+      "kickoffUtc": "2026-10-14T19:00Z",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null,
+      "minutePlayed": null,
+      "round": "League Phase",
+      "groupName": null,
+      "homeShootout": null,
+      "awayShootout": null
     }
   ],
   "eliminatedTeamIds": [],
   "teams": [
+    {
+      "id": "AEK",
+      "name": "AEK Athens",
+      "badge": "AA"
+    },
     {
       "id": "ARS",
       "name": "Arsenal",
@@ -178,14 +345,54 @@
       "badge": "AM"
     },
     {
+      "id": "AVL",
+      "name": "Aston Villa",
+      "badge": "AV"
+    },
+    {
       "id": "BAR",
       "name": "Barcelona",
       "badge": "BA"
     },
     {
+      "id": "BET",
+      "name": "Real Betis",
+      "badge": "RB"
+    },
+    {
+      "id": "BODO",
+      "name": "Bodo/Glimt",
+      "badge": "BO"
+    },
+    {
       "id": "BRU",
       "name": "Club Brugge",
       "badge": "CB"
+    },
+    {
+      "id": "COMO",
+      "name": "Como",
+      "badge": "CO"
+    },
+    {
+      "id": "DOR",
+      "name": "Borussia Dortmund",
+      "badge": "BD"
+    },
+    {
+      "id": "FCP",
+      "name": "FC Porto",
+      "badge": "FP"
+    },
+    {
+      "id": "FEN",
+      "name": "Fenerbahce",
+      "badge": "FE"
+    },
+    {
+      "id": "FEY",
+      "name": "Feyenoord Rotterdam",
+      "badge": "FR"
     },
     {
       "id": "GAL",
@@ -198,14 +405,29 @@
       "badge": "IN"
     },
     {
+      "id": "LAS",
+      "name": "LASK Linz",
+      "badge": "LL"
+    },
+    {
       "id": "LILL",
       "name": "Lille",
+      "badge": "LI"
+    },
+    {
+      "id": "LIV",
+      "name": "Liverpool",
       "badge": "LI"
     },
     {
       "id": "MAN",
       "name": "Manchester United",
       "badge": "MU"
+    },
+    {
+      "id": "MNC",
+      "name": "Manchester City",
+      "badge": "MC"
     },
     {
       "id": "MUN",
@@ -216,6 +438,11 @@
       "id": "NAP",
       "name": "Napoli",
       "badge": "NA"
+    },
+    {
+      "id": "PSG",
+      "name": "Paris Saint-Germain",
+      "badge": "PS"
     },
     {
       "id": "PSV",
@@ -233,6 +460,16 @@
       "badge": "LE"
     },
     {
+      "id": "RMA",
+      "name": "Real Madrid",
+      "badge": "RM"
+    },
+    {
+      "id": "ROMA",
+      "name": "AS Roma",
+      "badge": "AR"
+    },
+    {
       "id": "SAB",
       "name": "Sabah FK",
       "badge": "SF"
@@ -243,9 +480,24 @@
       "badge": "SC"
     },
     {
+      "id": "SHK",
+      "name": "Shakhtar Donetsk",
+      "badge": "SD"
+    },
+    {
+      "id": "SLB",
+      "name": "Slovan Bratislava",
+      "badge": "SB"
+    },
+    {
       "id": "SLP",
       "name": "Slavia Prague",
       "badge": "SP"
+    },
+    {
+      "id": "VFB",
+      "name": "VfB Stuttgart",
+      "badge": "VS"
     },
     {
       "id": "VIK",
