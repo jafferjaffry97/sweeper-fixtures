@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T18:45:57.724Z",
+  "lastUpdated": "2026-10-18T21:14:54.887Z",
   "currentStage": "League Phase",
   "fixtures": [
     {
@@ -529,8 +529,8 @@
       "homeTeamId": "AVL",
       "homeTeamName": "Aston Villa",
       "homeTeamFlag": "AV",
-      "awayTeamId": "VIKING FK",
-      "awayTeamName": "VIKING FK",
+      "awayTeamId": "VFK",
+      "awayTeamName": "Viking FK",
       "awayTeamFlag": "VF",
       "kickoffUtc": "2026-10-21T19:00Z",
       "status": "scheduled",
@@ -822,6 +822,11 @@
       "id": "VFB",
       "name": "VfB Stuttgart",
       "badge": "VS"
+    },
+    {
+      "id": "VFK",
+      "name": "Viking FK",
+      "badge": "VF"
     },
     {
       "id": "VIKING FK",
